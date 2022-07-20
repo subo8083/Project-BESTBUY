@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div id="navbar">Navbar</div>
+    <div id="cartdetail">
+      <div id="cart">
+        <h1 class="header">Your Cart</h1>
+        <div id="advte">
+          <img
+            src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/sol83684-tt-logo-der-216859.jpg"
+            alt=""
+          />
+          <div>
+            <h1>Unlock up to $97.801 in savings</h1>
+            <p>
+              You'll also get discounted services, extended returns, up to 24
+              mo. protection on most purchases and more with an active
+              membership.
+            </p>
+          </div>
+          <button>Unlock Savings</button>
+        </div>
+        <div id="cart_container"></div>
+        <div id="saved_container">
+          <div id="saved_header">
+          <h1 class="header"> <i class="fa fa-bookmark-o" style="font-size:24px ; margin-right:1%"></i>Saved Items</h1></div>
+          
+          <p>Manage your saved items</p>
+          <div id="saved_items"></div>
+          </div>
+      </div>
+      <div id="order">
+        <h1>Order Summary</h1>
+        <div id="summary">
+          <p>Original Price</p>
+          <p id="original_price"></p>
+          <p>Savings</p>
+          <p id="savings"></p>
+          <p>Shipping</p>
+          <p>FREE</p>
+
+          <p id="tax">Estimated Sales Tax</p>
+          <p id="tax_amt"></p>
+        </div>
+        <div id="total">
+          <h1>Total</h1>
+          <h1 id="total_amt"></h1>
+        </div>
+        <button>Checkout</button>
+        <button>
+          <h3><i>PayPal</i></h3>
+          <p style="color: none">-</p>
+          Checkout
+        </button>
+        <p>
+          <a>Sign in or create an account now </a>to get My Best <br />Buy™
+          Points
+        </p>
+        
+        <div id="card_add">
+          <div>
+          <img
+            src="https://www.bestbuy.com/~assets/bby/_com/MBBCC_MBBVC_Contactless_Dual_Yellow_Edge_RGB-a32c353844fb660dd08157fcccf95d42.png"
+            alt=""
+          />
+          <a>Show me how ></a>
+            </div>
+          <div>
+            
+            <h1>10% back in rewards</h1>
+            <p>
+              on first day of purchases or flexible financing for new My Best
+              Buy® Credit Cardmembers.
+            </p>
+            
+          </div>
+        
+        </div>
+        <div>
+          <h3>Looking for a lease to own option?</h3>
+          <p>Enjoy the tech you want today.<a>Learn more ></a></p>
+        </div>
+         <div id="card_add">
+          <div>
+          <img
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCA4OCAzMiIgYWx0PSIiIGFyaWEtaGlkZGVuPSJ0cnVlIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTEuOTY4MTUgMjUuMDg3NEwyLjczMTE5IDMxLjEzNDhIMjkuNDQxMUwyOC41NjgxIDI0LjIwOTlIMTYuMTEyOEwxNi4wMDUxIDIzLjM1MDdMMjcuNDc1MiAxNS41NTI2TDI2LjcwODggOS40OTIxOUgwTDAuODc0MTE0IDE2LjQxODJIMTMuMzQ4M0wxMy40NTgzIDE3LjI4MzhMMS45NjgxNSAyNS4wODc0WiIgZmlsbD0iIzFBMDgyNiIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTI5LjgxMjUgOS40OTEyMUwzMi41NDM3IDMxLjEzMzlINTkuMjc0N0w1Ni41NDI0IDkuNDkxMjFIMjkuODEyNVoiIGZpbGw9IiNBQThGRkYiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zMi40MDEgNi42MTk2N0MzNC4xNTA0IDguMTMzNjkgMzYuNjczOSA4LjEzMzY5IDM4LjAzNjcgNi42MTk2N0MzOS40MDA2IDUuMTA1NjQgMzkuMDg3NCAyLjY1MDM1IDM3LjMzODEgMS4xMzYzM0MzNS41ODk4IC0wLjM3ODc3NiAzMy4wNjYzIC0wLjM3ODc3NiAzMS43MDI0IDEuMTM2MzNDMzAuMzM5NiAyLjY1MDM1IDMwLjY1MTcgNS4xMDU2NCAzMi40MDEgNi42MTk2N1oiIGZpbGw9IiMxQTA4MjYiLz4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik03Ny40MjY3IDIwLjczOEw2OS4wNjEgMjAuNzQ2Nkw2OC40MDU3IDE1LjU1MjlMNzYuODE0NyAxNS41NTk0Qzc4Ljc5MTggMTUuNTgyMSA3OS44MDQ3IDE2LjY2NiA3OS45NjggMTguMTQ4N0M4MC4wNzI0IDE5LjEwMjkgNzkuNjIzNyAyMC43MzggNzcuNDI2NyAyMC43MzhaTTg3LjMwNzQgMTcuMjg0MkM4Ni42ODk5IDEyLjQxOSA4Mi43NjI1IDkuNDcwODkgNzcuNDI0NSA5LjQ5MTMySDU5LjY0NDVMNjIuMzc1NyAzMS4xMzUySDcwLjM3MzhMNjkuODI2MiAyNi44MDZINzguMjkwOEM4NC45NTI4IDI2LjgwNiA4OC4wMDE2IDIyLjc2NjQgODcuMzA3NCAxNy4yODQyWiIgZmlsbD0iIzFBMDgyNiIvPgo8L3N2Zz4K"
+            alt=""
+          />
+          <a><b>Learn More ></b></a>
+            </div>
+          <div>
+            
+            <p>4 payments starting at  <h3>$44.24</h3></p>
+           
+            <p>
+              Select Zip under ‘Other payment options’ when checking out.
+            </p>
+            
+          </div>
+        
+        </div>
+        <div id="gift">
+          <i class="fa fa-gift" style="font-size:24px"><h5>Buying a gift for someone special?</h5></i>
+        <p>Gift options can be added in checkout.<a>Learn More ></a></p>
+        </div>
+      </div>
+    </div>
+   
+  </body>
+</html>
+<script src="cart.js"></script>
