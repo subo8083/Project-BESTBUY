@@ -1,0 +1,430 @@
+{
+    "products":{
+
+        "laptops":[
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Dell_circle_blue_rgb_ai_renditionpicker_319x319-132644.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6503/6503233_sd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Dell - Inspiron 2-in-1 14” FHD+ Touch Laptop- AMD Ryzen 5 - 8GB Memory - 512GB SSD - Pebble Green",
+                "desc2":"Dell - Inspiron 2-in-1 14” FHD+ Touch Laptop- AMD Ryzen 5 - 8GB Memory - 512GB SSD - Pebble Green",
+                "Model":"i7425-A242PBL-PUS",
+                "SKU":"6503229",
+                "rating":"4.7",
+                "price":"$799.99",
+                "save": "$250",
+                "newPrice":"$549.99",
+                "addon": "Free 6-month security software"
+                
+            },
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Lenovo_Red_eps_renditionpicker_319x319-117238.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6447/6447140_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Laptops with Amazon Alexa built in.",
+                "desc2":"Lenovo Chromebook 3 14' Touch Laptop - Mediatek MT8183 - 4GB Memory - 64GB eMMC - Arctic Grey",
+                "Model":"82KN0001US",
+                "SKU":"6447140",
+                "rating":"4.6",
+                "price":"$319.00",
+                "save": "$150",
+                "newPrice":"$169.00",
+                "addon": "Free 6-month security software & 1 more"
+            },
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/HP_Blue_RGB_ai_renditionpicker_319x319-91920.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6458/6458047_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Save on select laptops.",
+                "desc2":"HP - 14'' 2-In-1 Touchscreen Chromebook - Intel Core i3 - 8GB Memory - 128GB SSD - Mineral Silver",
+                "Model":"14c-cc0013dx",
+                "SKU":"6458047",
+                "rating":"4.5",
+                "price":"$699.00",
+                "save": " $300",
+                "newPrice":"$399.00",
+                "addon": "Free 6-month security software"
+            },
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Dell_circle_blue_rgb_ai_renditionpicker_319x319-132644.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500646_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Save on select laptops.",
+                "desc2":"Dell - Inspiron 3511 15.6'' Touch Laptop - Intel Core i5 - 8GB Memory - 256GB Solid State Drive - Black",
+                "Model":"i3511-5174BLK-PUS",
+                "SKU":"6500646",
+                "rating":"4.5",
+                "price":"$599.99",
+                "save": "$100",
+                "newPrice":"$499.99",
+                "addon": "Free 6-month security software"
+            },
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/dam/Microsoft_Surface_4C_Stacked-24878f8b-462a-454b-bc48-9090070d3046.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502257_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Save on select laptops.",
+                "desc2":"Microsoft - Surface Pro 8 - 13” Touch Screen - Intel Core i5 - 8GB Memory - 128GB SSD - Device with Black Keyboard - Platinum",
+                "Model":"IUR-00001",
+                "SKU":"6502257",
+                "rating":"3.7",
+                "price":" $1,249.99",
+                "save": "$350",
+                "newPrice":"$899.99",
+                "addon": "Free 6-month security software"
+            },
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/ASUS_K_eps_renditionpicker_319x319-91945.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6492/6492794_rd.jpg",
+                "desc1":"Save on select laptops.",
+                "desc2":"ASUS - Zenbook 15.6'' Laptop - AMD Ryzen 7 - 8GB Memory - NVIDIA GeForce MX450 - 256GB SSD - Light Grey",
+                "Model":"Q508UG-212.R7TB",
+                "SKU":"6492794",
+                "rating":"4.2",
+                "price":"$869.99",
+                "save": "$300",
+                "newPrice":"$569.99",
+                "addon": "Free 6-month security software"
+            }
+        ],
+        
+        "headphones":[
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Beats_vt_2021_K_ai_renditionpicker_319x319-214271.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397391cv11d.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Beats Fit Pro.",
+                "desc2":"Beats by Dr. Dre - Beats Fit Pro True Wireless Noise Cancelling In-Ear Earbuds - Black",
+                "Model":"MK2F3LL/A",
+                "SKU":"6397391",
+                "rating":"4.5",
+                "price":"$199.99",
+                "addon": "6 free months of Apple Music & 2 more"
+            },
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Sony_NoR_K_4C_ai_renditionpicker_319x319-91923.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479557_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Sony Wireless Noise Cancelling Over-The-Ear Headphones",
+                "desc2":"Sony - WH-XB910N Wireless Noise Cancelling Over-The-Ear Headphones - Gray",
+                "Model":"WHXB910N/H",
+                "SKU":"6479557",
+                "rating":"4.6",
+                "price":"$249.99",
+                "addon": "6 free months of Apple Music"
+            },
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/JBL_4c_eps_renditionpicker_319x319-92000.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463747_rd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"JBL - Tour One Wireless Over-Ear Noise Cancelling Headphone",
+                "desc2":"JBL - Tour One Wireless Over-Ear Noise Cancelling Headphones - Black",
+                "Model":"JBLTOURONEBLKAM",
+                "SKU":"6463747",
+                "rating":"4.1",
+                "price":"$299.99",
+                "save": "$150",
+                "newPrice":"$149.99",
+                "addon": "15-DAY FREE & EASY RETURNS"
+            },
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Sennheiser_hz_K_RGB_ai_renditionpicker_319x319-95170.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6460/6460170_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"CX True Wireless Black",
+                "desc2":"Sennheiser - CX True Wireless Earbud Headphones - Black",
+                "Model":"CX True Wireless Black",
+                "SKU":"6460170",
+                "rating":"4.2",
+                "price":"$129.99",
+                "save": "$50",
+                "newPrice":"$79.99",
+                "addon": "Free 6-month security software"
+            },
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/SkullCandy_K_ai_renditionpicker_319x319-92012.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6427/6427089_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Skullcandy - Hesh Evo Over-the-Ear Wireless",
+                "desc2":"Skullcandy - Hesh Evo Over-the-Ear Wireless - True Black",
+                "Model":"S6HVW-N740",
+                "SKU":"6427089",
+                "rating":"4.5",
+                "price":"$104.99",
+                "save": "$25",
+                "newPrice":"$79.99",
+                "addon": "6 free months of Apple Music & 1 more"
+            },
+            {
+                "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Beats_vt_2021_K_ai_renditionpicker_319x319-214271.png;maxHeight=70;maxWidth=120",
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5920/5920901_rd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Save $100 on select Beats Studio3 Wireless headphones.",
+                "desc2":"Beats by Dr. Dre - Beats Studio³ Wireless Noise Cancelling Headphones - Matte Black",
+                "Model":"MX3X2LL/A",
+                "SKU":" 5920901",
+                "rating":"4.9",
+                "price":"$349.99",
+                "save": "$100",
+                "newPrice":"$249.99",
+                "addon": "6 free months of Apple Music & 1 more"
+            }
+        ],
+
+
+        "techForfun":[
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6425/6425976_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Chromecast with Google TV - 4K - Snow",
+                "desc2":"Chromecast with Google TV - 4K - Snow",
+                "Model":"GA01919-US",
+                "SKU":"6425976",
+                "rating":"4.6",
+                "price":"$49.99",
+                "addon": "3 free months of YouTube Premium & 2 more"
+            },
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6483/6483635_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Google - Pixel 6 128GB (Unlocked) - Stormy Black",
+                "desc2":"Google - Pixel 6 128GB (Unlocked) - Stormy Black",
+                "Model":"GA02900-US",
+                "SKU":"6483635",
+                "rating":"4.3",
+                "price":"$599.00",
+                "addon": "3 free months of YouTube Premium "
+            },
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6269/6269234_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Ninja Air Fryer - Black/Gray",
+                "desc2":"Ninja Air Fryer - Black/Gray",
+                "Model":"AF101",
+                "SKU":"6269234",
+                "rating":"4.8",
+                "price":"$119.99",
+                "save": "$20",
+                "newPrice":"$99.99",
+                "addon": "3 free months of YouTube Premium & 2 more"
+            },
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6472/6472510_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Hover-1 - Highlander Pro Foldable Electric Scooter w/18 mi Max Operating Range & 15 mph Max Speed - Black",
+                "desc2":"Hover-1 - Highlander Pro Foldable Electric Scooter w/18 mi Max Operating Range & 15 mph Max Speed - Black",
+                "Model":"H1-HRPRO-BLK",
+                "SKU":"6472510",
+                "rating":"3.5",
+                "price":"$499.99",
+                "addon": "15-DAY RETURN PERIOD"
+            },
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6502/6502590_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Vankyo - Leisure 470 Pro Native 1080P Projector, Full HD 5G Wireless Mini Projector - White",
+                "desc2":"Vankyo - Leisure 470 Pro Native 1080P Projector, Full HD 5G Wireless Mini Projector - White",
+                "Model":"L470 PRO",
+                "SKU":"6502590",
+                "rating":"4.1",
+                "price":"$169.99",
+                "addon": "15-DAY RETURN PERIOD"
+            },
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6500/6500032_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"SkyCaddie - TourBook Golf GPS Smartwatch - Black",
+                "desc2":"SkyCaddie - TourBook Golf GPS Smartwatch - Black",
+                "Model":"LX5C",
+                "SKU":"6500032",
+                "rating":"0",
+                "price":"$299.95",
+                "save": "$50",
+                "newPrice":"$349.95",
+                "addon": "3 free months of YouTube Premium & 2 more"
+            }
+        ],
+
+        "AppleTech":[
+            {
+                "logo": "https://www.bestbuy.com/site/iphone/shop-iphone-13-models/pcmcat1631714593943.c?id=pcmcat1631714593943",
+                "image":"",
+                "desc1":"iPhone 13 Pro Save up to $800",
+                "desc2":"Apple - iPhone 13 Pro 5G 128GB - Sierra Blue (Verizon)",
+                "Model":"MLTT3LL/A",
+                "SKU":"MLTT3LL/A",
+                "rating":"4.8",
+                "price":"$199.00",
+                "addon": "30-DAY RETURN PERIOD"
+            },
+            {
+               
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6450/6450853_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"MacBook Save $200 on select models.",
+                "desc2":"MacBook Pro 14'' Laptop - Apple M1 Pro chip - 16GB Memory - 512GB SSD (Latest Model) - Space Gray",
+                "Model":" MKGP3LL/A",
+                "SKU":"6450853",
+                "rating":"5.0",
+                "price":"$1,999.00",
+                "save": "$200",
+                "newPrice":"$1,799.00",
+                "addon": "Free 6-month security software"
+            }, 
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6215/6215933_sd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Apple Watch Series 7 Save up to $150 with qualified trade-in.",
+                "desc2":"Apple Watch Series 7 (GPS) 41mm Starlight Aluminum Case with Starlight Sport Band - Starlight",
+                "Model":"MKMY3LL/A",
+                "SKU":"6215933",
+                "rating":"5.0",
+                "price":"$399.00",
+                "addon": "Get 4 months of Apple Fitness+ free when you buy Apple Watch (new subscribers only)"
+            },
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5985/5985617_sd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"iPad Air (4th gen.) Save $50 on select models.",
+                "desc2":"Apple - 10.9-Inch iPad Air - (4th Generation) with Wi-Fi - 64GB - Space Gray",
+                "Model":"MYFM2LL/A",
+                "SKU":"5985617",
+                "rating":"5.0",
+                "price":"$599.99",
+                "save": "$200",
+                "newPrice":"$399.99",
+                "addon": "6 free months of Apple Music & 2 more"
+            },
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6373/6373463_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"AirPods Max",
+                "desc2":"Apple - AirPods Max - Silver",
+                "Model":"MGYJ3AM/A",
+                "SKU":"6373463",
+                "rating":"4.6",
+                "price":"$499.99",
+                "save": "0",
+                "newPrice":"$499.99",
+                "addon": "Free 6-month security software"
+            },
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6342/6342364_sd.jpg;maxHeight=640;maxWidth=550",
+                "desc1":"Apple TV 4K 64GB (2nd Generation) (Latest Model) - Black",
+                "desc2":"Apple TV 4K 64GB (2nd Generation) (Latest Model) - Black",
+                "Model":"MXH02LL/A",
+                "SKU":"6342364",
+                "rating":"4.8",
+                "price":"$199.99",
+                "save": "$50",
+                "newPrice":"$149.99",
+                "addon": "15-DAY FREE & EASY RETURNS"
+            }
+        ],
+
+        "personalSpace":[
+            {
+                
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6442/6442217_rd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Philips Sonicare - Philips One by Sonicare Rechargeable Toothbrush - Shadow",
+                "desc2":"Philips Sonicare - Philips One by Sonicare Rechargeable Toothbrush - Shadow",
+                "Model":"HY1200/06",
+                "SKU":"6442217",
+                "rating":"4.5",
+                "price":"$39.99"
+            },
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5821/5821701_rd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Philips Norelco - Multigroom 7000 Trimmer - Silver",
+                "desc2":"Philips Norelco - Multigroom 7000 Trimmer - Silver",
+                "Model":"MG7750/49",
+                "SKU":"5821701",
+                "rating":"4.9",
+                "price":"$64.99"
+            },
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6406/6406691_rd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Snow - Teeth Whitening System",
+                "desc2":"Snow - Teeth Whitening System",
+                "Model":"SNOW-1-KIT",
+                "SKU":"6406691",
+                "rating":"4.3",
+                "price":"$149.99"
+            },
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6462/6462788_rd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Tweezerman - Combo Nail Clipper Set - Stainless Steel/Black",
+                "desc2":"Tweezerman - Combo Nail Clipper Set - Stainless Steel/Black",
+                "Model":"4015-R",
+                "SKU":" 6462788",
+                "rating":"4.4",
+                "price":"$10.99"
+            },
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6403/6403498_rd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Duke Cannon - Quick Buff Siberian Mint Face Scrub - White",
+                "desc2":"Duke Cannon - Quick Buff Siberian Mint Face Scrub - White",
+                "Model":"6OZQUICKBUFF",
+                "SKU":"6403498",
+                "rating":"5.0",
+                "price":"$15.99"
+            },
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6504/6504640_sd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Dyson - Supersonic Hair Dryer - Nickel/Copper",
+                "desc2":"Dyson - Supersonic Hair Dryer - Nickel/Copper",
+                "Model":"389920-01",
+                "SKU":" 6504640",
+                "rating":"5.0",
+                "price":"$429.99"
+            }
+        ],
+        "kitchen":[
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5856/5856600_sd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Insignia™ - 0.9 Cu. Ft. Compact Microwave - Stainless steel",
+                "desc2":"Insignia™ - 0.9 Cu. Ft. Compact Microwave - Stainless steel",
+                "Model":"NS-MW09SS8",
+                "SKU":"5856600",
+                "rating":"4.7",
+                "price":"$89.99"
+            },
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6410/6410014_sd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Insignia™ - Retro 3.1 cu. ft. Mini Fridge with Top Freezer - Creamy vanilla",
+                "desc2":"Insignia™ - Retro 3.1 cu. ft. Mini Fridge with Top Freezer - Creamy vanilla",
+                "Model":" NS-CFR32C1",
+                "SKU":" 6410014",
+                "rating":"4.6",
+                "price":"$219.99"
+            },
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6346/6346475_sd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Ninja - 10-Cup Specialty Coffee Maker with Fold-Away Frother and Glass Carafe CM401 - Black/Stainless Steel",
+                "desc2":"Ninja - 10-Cup Specialty Coffee Maker with Fold-Away Frother and Glass Carafe CM401 - Black/Stainless Steel",
+                "Model":"CM401",
+                "SKU":" 6346475",
+                "rating":"4.9",
+                "price":"$169.99"
+            },
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6367/6367431ld.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Ember - Temperature Control Smart Mug² - 14 oz - Black",
+                "desc2":"Ember - Temperature Control Smart Mug² - 14 oz - Black",
+                "Model":"CM191400US",
+                "SKU":"6367431",
+                "rating":"4.7",
+                "price":"$149.95"
+            },
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6412/6412334_sd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"Bella Pro Series - 4.2-qt. Analog Air Fryer - Matte Black",
+                "desc2":"Bella Pro Series - 4.2-qt. Analog Air Fryer - Matte Black",
+                "Model":" 90107",
+                "SKU":" 6412334",
+                "rating":"4.1",
+                "price":"$39.99"
+            },
+            {
+                "image":"https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5619/5619904_sd.jpg;maxHeight=200;maxWidth=300",
+                "desc1":"KitchenAid - KFC3516ER 3.5-Cup Mini Food Chopper - Empire Red",
+                "desc2":"KitchenAid - KFC3516ER 3.5-Cup Mini Food Chopper - Empire Red",
+                "Model":" KFC3516ER",
+                "SKU":" 5619904",
+                "rating":"4.5",
+                "price":"$59.99"
+            }
+        ]
+
+
+    }
+}
