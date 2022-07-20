@@ -295,3 +295,17 @@ color: #fff;
 .price , .pri{
   color:black;
 }
+#loading{
+  position: absolute;
+  
+  width:100%;
+  height: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:rgba(24, 17, 17, 0.541);
+  visibility: hidden;
+}
+#loading img {
+  height:15%;
+}
