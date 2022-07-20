@@ -6,9 +6,9 @@ let temp = [ {
     'model': "hasdakj",
     "SKU": "650032",
     "rating": "0",
-    "price": "$179.99",
+    "price": "$100",
     "save": "$70",
-    "newprice": "$219.99",
+    "newprice": "$170",
     "addon": "3 free months of youtube premium",
 
 },
@@ -19,9 +19,9 @@ let temp = [ {
     'model': "hasdakj",
     "SKU": "650032",
     "rating": "0",
-    "price": "$9.99",
+    "price": "$100",
     "save": "$70",
-    "newprice": "$219.99",
+    "newprice": "$170",
     "addon": "3 free months of youtube premium",
 
 },
@@ -32,9 +32,9 @@ let temp = [ {
     'model': "hasdakj",
     "SKU": "650032",
     "rating": "0",
-    "price": "$1000000",
+    "price": "$100",
     "save": "$70",
-    "newprice": "$219.99",
+    "newprice": "$170",
     "addon": "3 free months of youtube premium",
 
 },
@@ -45,18 +45,18 @@ let temp = [ {
     'model': "hasdakj",
     "SKU": "650032",
     "rating": "0",
-    "price": "$2000000",
+    "price": "$100",
     "save": "$70",
-    "newprice": "$219.99",
+    "newprice": "$170",
     "addon": "3 free months of youtube premium",
 
 },
 
 
 ];
-localStorage.setItem( "savedItems", JSON.stringify( temp ) );
-localStorage.setItem( "cartdata", JSON.stringify( temp ) );
-
+ localStorage.setItem( "savedItems", JSON.stringify( temp ) );
+ localStorage.setItem( "cartdata", JSON.stringify( temp ) );
+// temp XXXXXXX
 // taking item from localStorage....
  let arr = JSON.parse( localStorage.getItem( "cartdata" ) );
 
@@ -66,27 +66,12 @@ let split = ( ele ) => {
     return ( p[ 1 ] );
 };
 
-// let convertor = ( arr ) => {
-//      arr.forEach( ( ele ) => {
-    
-//     ele.price = split( ele.price );
-//     ele.save = split( ele.save );
-//     ele.newprice = split( ele.newprice );
-//      ele.quantity = 1;
-   
-// } );
-// }
-
-arr.forEach( ( ele ) => {
-    ele.quantity = 1;
-} );
-
 
 
 
 // saved items in local storage
 
-// let cart = JSON.parse( localStorage.getItem( "cartdata" ) );
+ let cart = JSON.parse( localStorage.getItem( "cartdata" ) );
  let cart_container = document.querySelector( "#cart_container" );
 let append = ( data, container ) => {
     container.innerHTML = null;
@@ -173,8 +158,19 @@ let total = ( data ) => {
 
 
 }
-total( arr);
-append( arr, cart_container );
+if ( arr != null ) {
+    arr.forEach( ( ele ) => {
+        ele.quantity = 1;
+    } );
+
+
+    total( arr );
+    append( arr, cart_container );
+
+} else {
+    cart_container.append = ( "Your cart is empty !!" );
+}
+
 
 // first append over.......
 

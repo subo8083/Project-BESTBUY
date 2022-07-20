@@ -68,7 +68,7 @@
   padding: 3%;
   background-color: white;
   margin-top: 3%;
-  height: 200px;
+  height: 170px;
 }
 #cart_container > div > img {
   height: 50%;
@@ -164,9 +164,13 @@ p {
   margin-top: 5%;
 }
 #order button:nth-child(4) {
-  background-color: #fff200;
+  background-color: #ffe000;
   font-weight: 600;
 }
+#order button:nth-child(4):hover{
+background-color: #fff200
+}
+
 #order button:nth-child(5) {
   background-color: #1d252c;
   color: white;
@@ -287,4 +291,7 @@ margin-top:2%;
 border-color: #001e73;
 color: #fff;
 
+}
+.price , .pri{
+  color:black;
 }
