@@ -1,59 +1,79 @@
 // -temparory........................
 let temp = [ {
-    'image': 'https://pisces.bbystatic.com/image2//BestBuy_US/images/products/4900/4900942_sd.jpg;maxHeight=100;maxWidth=100',
-    'desc1': 'Apple - AirPods Pro (with Magsafe Charging Case) - White',
-    'desc2': 'Apple - AirPods Pro (with Magsafe Charging Case) - White',
-    'model': "hasdakj",
-    "SKU": "650032",
-    "rating": "0",
-    "price": "$100",
-    "save": "$70",
-    "newprice": "$170",
-    "addon": "3 free months of youtube premium",
-
+    "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Beats_vt_2021_K_ai_renditionpicker_319x319-214271.png;maxHeight=70;maxWidth=120",
+    "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397391cv11d.jpg;maxHeight=640;maxWidth=550",
+    "desc1": "Beats Fit Pro.",
+    "desc2": "Beats by Dr. Dre - Beats Fit Pro True Wireless Noise Cancelling In-Ear Earbuds - Black",
+    "Model": "MK2F3LL/A",
+    "SKU": "6397391",
+    "rating": "4.5",
+    "price": "$199.99",
+    "addon": "6 free months of Apple Music & 2 more"
 },
-{
-    'image': 'https://pisces.bbystatic.com/image2//BestBuy_US/images/products/4900/4900942_sd.jpg;maxHeight=100;maxWidth=100',
-    'desc1': 'Apple - AirPods Pro (with Magsafe Charging Case) - White',
-    'desc2': 'Apple - AirPods Pro (with Magsafe Charging Case) - White',
-    'model': "hasdakj",
-    "SKU": "650032",
-    "rating": "0",
-    "price": "$100",
-    "save": "$70",
-    "newprice": "$170",
-    "addon": "3 free months of youtube premium",
-
-},
-{
-    'image': 'https://pisces.bbystatic.com/image2//BestBuy_US/images/products/4900/4900942_sd.jpg;maxHeight=100;maxWidth=100',
-    'desc1': 'Apple - AirPods Pro (with Magsafe Charging Case) - White',
-    'desc2': 'Apple - AirPods Pro (with Magsafe Charging Case) - White',
-    'model': "hasdakj",
-    "SKU": "650032",
-    "rating": "0",
-    "price": "$100",
-    "save": "$70",
-    "newprice": "$170",
-    "addon": "3 free months of youtube premium",
-
-},
-{
-    'image': 'https://pisces.bbystatic.com/image2//BestBuy_US/images/products/4900/4900942_sd.jpg;maxHeight=100;maxWidth=100',
-    'desc1': 'Apple - AirPods Pro (with Magsafe Charging Case) - White',
-    'desc2': 'Apple - AirPods Pro (with Magsafe Charging Case) - White',
-    'model': "hasdakj",
-    "SKU": "650032",
-    "rating": "0",
-    "price": "$100",
-    "save": "$70",
-    "newprice": "$170",
-    "addon": "3 free months of youtube premium",
-
-},
-
-
-];
+    {
+        "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Sony_NoR_K_4C_ai_renditionpicker_319x319-91923.png;maxHeight=70;maxWidth=120",
+        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479557_sd.jpg;maxHeight=640;maxWidth=550",
+        "desc1": "Sony Wireless Noise Cancelling Over-The-Ear Headphones",
+        "desc2": "Sony - WH-XB910N Wireless Noise Cancelling Over-The-Ear Headphones - Gray",
+        "Model": "WHXB910N/H",
+        "SKU": "6479557",
+        "rating": "4.6",
+        "price": "$249.99",
+        "addon": "6 free months of Apple Music"
+    },
+    {
+        "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/JBL_4c_eps_renditionpicker_319x319-92000.png;maxHeight=70;maxWidth=120",
+        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463747_rd.jpg;maxHeight=640;maxWidth=550",
+        "desc1": "JBL - Tour One Wireless Over-Ear Noise Cancelling Headphone",
+        "desc2": "JBL - Tour One Wireless Over-Ear Noise Cancelling Headphones - Black",
+        "Model": "JBLTOURONEBLKAM",
+        "SKU": "6463747",
+        "rating": "4.1",
+        "price": "$299.99",
+        "save": "$150",
+        "newPrice": "$149.99",
+        "addon": "15-DAY FREE & EASY RETURNS"
+    },
+    {
+        "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Sennheiser_hz_K_RGB_ai_renditionpicker_319x319-95170.png;maxHeight=70;maxWidth=120",
+        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6460/6460170_sd.jpg;maxHeight=640;maxWidth=550",
+        "desc1": "CX True Wireless Black",
+        "desc2": "Sennheiser - CX True Wireless Earbud Headphones - Black",
+        "Model": "CX True Wireless Black",
+        "SKU": "6460170",
+        "rating": "4.2",
+        "price": "$129.99",
+        "save": "$50",
+        "newPrice": "$79.99",
+        "addon": "Free 6-month security software"
+    },
+    {
+        "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/SkullCandy_K_ai_renditionpicker_319x319-92012.png;maxHeight=70;maxWidth=120",
+        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6427/6427089_sd.jpg;maxHeight=640;maxWidth=550",
+        "desc1": "Skullcandy - Hesh Evo Over-the-Ear Wireless",
+        "desc2": "Skullcandy - Hesh Evo Over-the-Ear Wireless - True Black",
+        "Model": "S6HVW-N740",
+        "SKU": "6427089",
+        "rating": "4.5",
+        "price": "$104.99",
+        "save": "$25",
+        "newPrice": "$79.99",
+        "addon": "6 free months of Apple Music & 1 more"
+    },
+    {
+        "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Beats_vt_2021_K_ai_renditionpicker_319x319-214271.png;maxHeight=70;maxWidth=120",
+        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5920/5920901_rd.jpg;maxHeight=200;maxWidth=300",
+        "desc1": "Save $100 on select Beats Studio3 Wireless headphones.",
+        "desc2": "Beats by Dr. Dre - Beats Studio³ Wireless Noise Cancelling Headphones - Matte Black",
+        "Model": "MX3X2LL/A",
+        "SKU": " 5920901",
+        "rating": "4.9",
+        "price": "$349.99",
+        "save": "$100",
+        "newPrice": "$249.99",
+        "addon": "6 free months of Apple Music & 1 more"
+    }
+        ];
 localStorage.setItem( "savedItems", JSON.stringify( temp ) );
 localStorage.setItem( "cartdata", JSON.stringify( temp ) );
 // temp close -- - - - - - - -- - - ->
@@ -62,6 +82,7 @@ localStorage.setItem( "cartdata", JSON.stringify( temp ) );
 let arr = JSON.parse( localStorage.getItem( "cartdata" ) );
 
 let split = ( ele ) => {
+    ele = ele.replace( ',', '' );
     let p = ele.split( '$' ).map( Number );
     return ( p[ 1 ] );
 };
@@ -76,7 +97,6 @@ let cart_container = document.querySelector( "#cart_container" );
 let append = ( data, container ) => {
     container.innerHTML = null;
     data.forEach( ( ele, index ) => {
-
         let div = document.createElement( 'div' );
         let image = document.createElement( 'img' );
         image.src = ele.image;
@@ -121,9 +141,9 @@ let append = ( data, container ) => {
         price.innerText = `$${ ( split( ele.price ) * ( ele.quantity ) ).toFixed( 2 ) }`;
 
         disc.setAttribute( "class", "disc" );
-        pri.innerText = `Was $${ split( ele.newprice ) * ele.quantity }`;
+        pri.innerText = `Was $${ ( split( ele.newprice ) * ele.quantity ).toFixed( 2 ) }`;
         pri.setAttribute( "class", "pri" );
-        disc.innerText = `Save $${ split( ele.save ) * ele.quantity } `
+        disc.innerText = `Save $${ ( split( ele.save ) * ele.quantity ).toFixed( 2 )} `
         div3.append( price, disc, pri );
         div2.append( select, p, p2 );
 
@@ -144,6 +164,7 @@ let total = ( data ) => {
     let t_savings = 0;
 
     data.forEach( ( ele ) => {
+     
         t_price += ( split( ele.newprice ) * ele.quantity );
         t_savings += ( split( ele.save ) * ele.quantity );
     } );
@@ -159,9 +180,17 @@ let total = ( data ) => {
 }
 
 //--first append by clicking cart on navbar;
-if ( arr !== null ) {
+let total_amt = document.querySelector( "#total_amt" ).innerText;
+if ( arr !== null && arr.length > 0 ) {
     arr.forEach( ( ele ) => {
         ele.quantity = 1;
+        if ( ele.save == undefined ) {
+            ele.save = "$0";
+        }
+        if ( ele.newprice == undefined ) {
+            ele.newprice = `$${ split( ele.price ) + 50 }`;
+         
+        }
     } );
 
 
@@ -221,6 +250,13 @@ let remove_items = ( data, index, container ) => {
 let savedItems = JSON.parse( localStorage.getItem( "savedItems" ) );
 savedItems.forEach( ( ele ) => {
     ele.quantity = 1;
+    if ( ele.save == undefined ) {
+        ele.save = "$0";
+    }
+    if ( ele.newprice ==undefined ) {
+        ele.newprice = `$${ split( ele.price ) + 50 }`;
+
+    }
 } );
 
 let saved_content = document.querySelector( "#saved_items" );
@@ -247,7 +283,7 @@ let save_append = ( data, container ) => {
         <i class="fa fa-star" style="font-size:14px;color:orange"></i>`
         let price = document.createElement( "h3" );
         let amt = document.createElement( "s" );
-        amt.innerText = `${ ele.newprice }`;
+        amt.innerText = `${ ( split(ele.newprice) ).toFixed( 2 )}`;
         let button = document.createElement( "button" );
         button.innerHTML = `<i class="fa fa-shopping-cart" style="font-size:14px"></i>  Add to Cart`;
         button.addEventListener( 'click', () => {
