@@ -56,12 +56,11 @@ let temp = [ {
 ];
  localStorage.setItem( "savedItems", JSON.stringify( temp ) );
  localStorage.setItem( "cartdata", JSON.stringify( temp ) );
-// temp XXXXXXX
-// taking item from localStorage....
+// temp close -- - - - - - - -- - - ->
+// take item from localStorage....
  let arr = JSON.parse( localStorage.getItem( "cartdata" ) );
 
 let split = ( ele ) => {
-    console.log( ele );
     let p = ele.split( '$' ).map( Number );
     return ( p[ 1 ] );
 };
@@ -71,7 +70,7 @@ let split = ( ele ) => {
 
 // saved items in local storage
 
- let cart = JSON.parse( localStorage.getItem( "cartdata" ) );
+//  let cart = JSON.parse( localStorage.getItem( "cartdata" ) );
  let cart_container = document.querySelector( "#cart_container" );
 let append = ( data, container ) => {
     container.innerHTML = null;
@@ -97,7 +96,7 @@ let append = ( data, container ) => {
         op4.value = 1;
         op2.value = 2;
         op3.value = 3;
-        op1.innerText = `${(ele.quantity)}`;
+        op1.innerText = `${ ( ele.quantity ) }`;
         op2.innerText = 2;
         op3.innerText = 3;
         op4.innerText = 1;
@@ -132,13 +131,13 @@ let append = ( data, container ) => {
     } );
 
 }
+// onchange quantity change price of product
 
 let total = ( data ) => {
     let price = document.querySelector( '#original_price' );
     let saving = document.querySelector( "#savings" );
     let tax = document.querySelector( "#tax_amt" );
     let total = document.querySelector( "#total_amt" );
-    let t_quan = 0;
     let t_price = 0;
 
     let t_savings = 0;
@@ -146,7 +145,6 @@ let total = ( data ) => {
     data.forEach( ( ele ) => {
         t_price += ( split(ele.newprice) * ele.quantity );
         t_savings += ( split(ele.save) * ele.quantity );
-        // t_quan += ele.quantity;
     } );
 
     price.innerText = `$${ ( t_price ).toFixed( 2 ) }`;
@@ -158,6 +156,8 @@ let total = ( data ) => {
 
 
 }
+
+//--first append by clicking cart on navbar;
 if ( arr != null ) {
     arr.forEach( ( ele ) => {
         ele.quantity = 1;
@@ -175,10 +175,7 @@ if ( arr != null ) {
 // first append over.......
 
 let changevalue = ( arr, ele, index ) => {
-
-
-
-    let val = document.querySelector( `#cart_container div:nth-child(${ index + 1 }) select` ).value;
+     let val = document.querySelector( `#cart_container div:nth-child(${ index + 1 }) select` ).value;
     arr[ index ].quantity = val;
     localStorage.setItem( "cartdata", JSON.stringify( arr ) );
     let data = JSON.parse( localStorage.getItem( "cartdata" ) );
@@ -201,20 +198,7 @@ let remove_items = ( data, index,container ) => {
 
     
 }
-/*
 
-"image":"";
-"desc1":"";
-"desc2":"";
-"model":"asdla";
-"SKU":"650032";
-"rating":"0";
-"price":"$299.95";
-"save":"$50";
-"newprice":"$349.95";
-"addon":"3 free months of youtube premium";
-
-*/
 //.......................saved part .....................//
 let savedItems = JSON.parse( localStorage.getItem( "savedItems" ) );
 savedItems.forEach( ( ele ) => {
@@ -266,7 +250,6 @@ let remove_saveditems = ( data, index, container ) =>{
 }
 let add_to_save = ( data, index, container,ele ) => {
     savedItems.push( ele );
-    console.log( ele,savedItems );
     save_append( savedItems, saved_content );
     localStorage.setItem( "savedItems", JSON.stringify(savedItems ) )   
     remove_items( data, index, container );
@@ -278,13 +261,23 @@ let add_to_save = ( data, index, container,ele ) => {
 }
 let add_to_container = ( data, index, container, ele ) => {
     arr.push( ele );
-    console.log( ele, savedItems );
     append( arr, cart_container );
     localStorage.setItem( "cartdata", JSON.stringify( arr ) );
      remove_saveditems( data, index, container );
-    console.log( arr );
     let details = JSON.parse( localStorage.getItem( "cartdata" ) );
 
     total( details );
 
 }
+
+//*********************** */
+let checkout = () => {
+    // let data = JSON.parse( localStorage.getItem( "cartdata" ) );
+
+    
+    // document.querySelector( '#loading' ).style.visibility = 'visible';
+    // document.querySelector( 'body').style.pointerEvents = 'none';
+    // //window.location.href = '';
+    
+}
+
