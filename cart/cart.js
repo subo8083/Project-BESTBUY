@@ -158,7 +158,7 @@ let total = ( data ) => {
 
 
 }
-if ( arr != null ) {
+if ( arr!= null ) {
     arr.forEach( ( ele ) => {
         ele.quantity = 1;
     } );
@@ -287,4 +287,15 @@ let add_to_container = ( data, index, container, ele ) => {
 
     total( details );
 
+}
+
+let checkout = () => {
+    // let data = JSON.parse( localStorage.getItem( "cartdata" ) );
+
+    let total = document.querySelector( "#total_amt" );
+    console.log(total)
+    // document.querySelector( '#loading' ).style.visibility = 'visible';
+    // document.querySelector( 'body').style.pointerEvents = 'none';
+    // //window.location.href = '';
+    
 }
