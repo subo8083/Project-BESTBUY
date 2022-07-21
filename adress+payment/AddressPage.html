@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address_Page</title>
+    <link rel="stylesheet" href="AddresspageCSS.css">
+    <link href="images"></link>
+</head>
+<style>
+    
+
+</style>
+
+
+
+<body>
+    
+
+    <div id="navbar"></div>
+
+    <form action="" id="form">
+    <div id="main">
+        <div id="AddressDetail">
+            <h2>Edit Address</h2>
+            <label for="">Select Country</label>
+        </div>
+        <input type="text" class="form__field" id="country"> 
+        <div class="form__group field">
+            <input type="input" class="form__field" placeholder="Name" name="name" id="name" required />
+            <label for="name" class="form__label">Name</label>
+            
+        </div>
+        <div class="form__group field">
+            <input type="name" class="form__field" placeholder="+91" id="Num" required/>
+            <label for="" class="form__label">Phone Number</label>
+        </div>
+        <div class="form__group field">
+            <input type="name" class="form__field" placeholder="Postal Code" id="code" required/>
+            <label for="" class="form__label">Postal Code</label>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Address</legend>
+                <textarea id="multi" name="nam" rows="4" cols="20"></textarea>
+            </fieldset>
+
+        </div>
+        <div id="check">
+            <input type="checkbox" id="chek" name="" value="name">
+            <label for="">Use this as my default Shipping Address</label>
+        </div>
+        <div>
+            <input id="submit" type="submit" name="submit" value="ship to this Address >" />
+        </div>
+    </div>  
+</form>
+</body>
+</html>
+
+<script>
+    
+    let AddArr=JSON.parse(localStorage.getItem("AddData"))||[];
+    let myAddress=()=>{
+        event.preventDefault();
+        let AddressObj={
+            country:document.querySelector("#country").value,
+            Name:document.querySelector("#name").value,
+            phone:document.querySelector("#Num").value,
+            code:document.querySelector("#code").value,
+            Addresss:document.querySelector("#multi").value,
+            
+        }
+        AddArr.push(AddressObj);
+    
+        localStorage.setItem("AddData",JSON.stringify(AddArr))
+        window.location.href="payment.html"
+    }
+
+    document.querySelector("form").addEventListener("submit",myAddress)
+    
+</script>

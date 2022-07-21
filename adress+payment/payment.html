@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <!-- <img src="Capture.PNG" alt="" /> -->
+      <div>
+        <!-- <img src="Capture1.PNG" alt="" /> -->
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- info part---------------------------------------------------------------- -->
+    <div id="info">
+      <div>
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+        />
+      </div>
+      <div>
+        <h3>
+          Please use a digital payment method & help us ensure contactless
+          delivery for your safety
+        </h3>
+      </div>
+    </div>
+    <!-- heading part------------------------------------------------------------ -->
+    <div id="heading">
+      <h3>CHOOSE PAYMENT METHOD</h3>
+    </div>
+    <!-- payment part------------------------------------------------------------------- -->
+    <div id="container">
+      <div class="first">
+        <div>
+          <p>Credit/Debit Card</p>
+        </div>
+        <div>
+          <p>UPI</p>
+        </div>
+        <div>
+          <p>Google Pay</p>
+        </div>
+        <div>
+          <p>Net Banking</p>
+        </div>
+        <div>
+          <p>Mobile Wallets</p>
+        </div>
+        <div>
+          <p>Cash On Delivery</p>
+        </div>
+        <div>
+          <p>Gift Cards</p>
+        </div>
+      </div>
+      <div class="second">
+        <div>
+          <p>Credit/Debit Card</p>
+        </div>
+        <form>
+          <input id="cardno" type="number" placeholder="Card Number" />
+          <br />
+          <label for="">expiry</label>
+          <br />
+          <input id="date" type="text" placeholder="MM/YY" />
+          <input id="cvv" type="password" placeholder="CVV" />
+          <br />
+          <input id="submit" type="submit" value="Pay Now >" />
+          <!-- <button id="submit">Pay Now</button> -->
+        </form>
+      </div>
+      <div class="third">
+        <div id="up">
+          <div id="one">
+            <div id="paymentof">
+              <!-- <p id="quanT">1</p> -->
+              <!-- <p> Item In Bag</p> -->
+            </div>
+            <div><p>Details</p></div>
+          </div>
+          <div id="two">
+            <div><p>Sub Total</p></div>
+            <div>
+              <p id="amt1">777</p>
+            </div>
+          </div>
+          <div id="three">
+            <div><p>Shipping Charge</p></div>
+            <div><p>Free</p></div>
+          </div>
+          <div id="four">
+            <div><p>Grand Total</p></div>
+            <div>
+              <p id="amt2"></p>
+            </div>
+          </div>
+        </div>
+        <div id="down">
+          <div id="five">
+            <div>
+              <p>SHIPPING ADDRESS</p>
+            </div>
+            <div>
+              <p>CHANGE</p>
+            </div>
+          </div>
+          <div id="six">
+            <p id="Name"></p>
+          </div>
+          <div id="seven">
+            <p id="address"></p>
+          </div>
+          <div id="eight">
+            <p id="mobile"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="bottom">
+      <!-- <img src="Screenshot (39).png" alt="" /> -->
+    </div>
+  </body>
+</html>
+<script src="payment.js"></script>
