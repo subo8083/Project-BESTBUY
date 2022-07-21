@@ -154,15 +154,13 @@ let total = ( data ) => {
     tax.innerText = `$${ t_tax }`;
     total.innerText = `$${ ( t_price - t_savings + ( +t_tax ) ).toFixed( 2 ) }`
 
+    let tot=`$${ ( t_price - t_savings + ( +t_tax ) ).toFixed( 2 ) }`
+    localStorage.setItem("cart-amount",tot)
 
 }
-<<<<<<< HEAD
-if ( arr!= null ) {
-=======
 
 //--first append by clicking cart on navbar;
 if ( arr != null ) {
->>>>>>> b504d2640682f667d514053340206e6caa3dca3b
     arr.forEach( ( ele ) => {
         ele.quantity = 1;
     } );
@@ -274,26 +272,14 @@ let add_to_container = ( data, index, container, ele ) => {
 
 }
 
-<<<<<<< HEAD
-let checkout = () => {
-    // let data = JSON.parse( localStorage.getItem( "cartdata" ) );
-
-    let total = document.querySelector( "#total_amt" );
-    console.log(total)
-=======
 //*********************** */
 let checkout = () => {
     // let data = JSON.parse( localStorage.getItem( "cartdata" ) );
 
     
->>>>>>> b504d2640682f667d514053340206e6caa3dca3b
     // document.querySelector( '#loading' ).style.visibility = 'visible';
     // document.querySelector( 'body').style.pointerEvents = 'none';
     // //window.location.href = '';
     
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> b504d2640682f667d514053340206e6caa3dca3b
