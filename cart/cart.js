@@ -176,6 +176,8 @@ let total = ( data ) => {
     tax.innerText = `$${ t_tax }`;
     total.innerText = `$${ ( t_price - t_savings + ( +t_tax ) ).toFixed( 2 ) }`
 
+    let tot=`$${ ( t_price - t_savings + ( +t_tax ) ).toFixed( 2 ) }`
+    localStorage.setItem("cart-amount",tot)
 
 }
 
