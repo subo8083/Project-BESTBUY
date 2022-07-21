@@ -286,11 +286,20 @@ margin-top:2%;
 #saved_items > div p {
   color:black;
 }
-#cart button:hover {
+#cart button:hover,#emp_button:hover {
   background: #001e73;
 border-color: #001e73;
 color: #fff;
 
+}
+#emp_button a{
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
+#emp_button{
+   background-color:#0046be;
+    color:white;
 }
 .price , .pri{
   color:black;
@@ -306,6 +315,26 @@ color: #fff;
   background-color:rgba(24, 17, 17, 0.541);
   visibility: hidden;
 }
-#loading img {
-  height:15%;
+#zero_total{
+   border-top: 1px solid #c5cbd5;
+  border-bottom: 1px solid #c5cbd5;
+  padding-top:5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3%;
+
+}
+#zero_total > div {
+  display:flex;
+  justify-content: space-between;
+  
+  
+}
+#zero_total > div > h1:nth-child(2){
+text-align:right;
+width: 100%;
+
+
 }

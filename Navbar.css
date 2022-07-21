@@ -210,6 +210,16 @@
   left: 15%;
   background-color: white;
 }
+.arrow2{
+  width: 15px;
+  height: 15px;
+  top:-20px;
+  left:-70px;
+  transform: rotate(133deg);
+  position:relative;
+  background-color: white;
+  border-radius: 2px;
+}
 #options > div > p {
   font-size: 16px;
 }
@@ -224,4 +234,50 @@
 
 #search::placeholder {
   background-image: green;
+}
+#login_sign{
+  position: absolute;
+  top: 110px;
+  right: 25%;
+  padding: 1%;
+  display:flex;
+  flex-direction: column;
+  width:16%;
+  font-size:13px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  height:230px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  /* right:30%; */
+}
+#login_sign button{
+  width: 100%;
+  height:15%;
+  border:none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#login_sign >button:nth-child(3){
+  background-color:#0046be;
+    color:white;
+    
+}
+#login_sign >button:nth-child(3):hover,#login_sign >button:nth-child(4):hover{
+  background-color:#001e73;
+  color:white;
+
+}
+#login_sign > button:nth-child(4){
+  border:1px solid #0046be;
+  color:#0046be;
+}
+#login_sign > p:hover{
+  text-decoration:none;
 }
