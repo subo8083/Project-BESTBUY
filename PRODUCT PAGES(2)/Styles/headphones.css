@@ -1,5 +1,5 @@
 #top_deals{
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -11,12 +11,12 @@
     color: white;
     /* border: 1px solid black; */
     transform: skewX(-40deg);
-    height: 40px;
+    height: 50px;
     position: absolute;
 }
 #text_td{
     position: relative;
-    margin-top: -38px;
+    margin-top: -27px;
     margin-left: 100px;
     color: white;
     font-size: 25px;

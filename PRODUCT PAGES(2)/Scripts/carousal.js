@@ -70,11 +70,11 @@ let carousal=()=>{
     </section>`
 }
 
-let topDeal=()=>{
-    return`<div id="redbox">
-    </div>
-    <h5 class="text_p">Today's featured deals and top tech. Valid through 7/24/22.*</h5>`
-}
+// let topDeal=()=>{
+//     return`<div id="redbox">
+//     </div>
+//     <h5 class="text_p">Today's featured deals and top tech. Valid through 7/24/22.*</h5>`
+// }
  
-document.getElementById()
+// document.getElementById()
 export default carousal
