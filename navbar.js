@@ -36,7 +36,8 @@ function takequery( ele ) {
         query_append( data [query]);
     } ).catch( ( err ) => {
         console.log( err );
-        document.querySelector( "#q_append" ).innerText = "Product not found !!"
+        document.querySelector( "#q_append" ).innerHTML = `<p style = "text-align:center ; margin-top:5%; color:gray" : center>Product not found !!</p>`;
+        
     })
         
     }    
@@ -65,3 +66,16 @@ let query_append = ( data ) => {
     
     console.log(data)
 }
+
+
+
+let count_cart = () => {
+    let cart_count = JSON.parse( localStorage.getItem( 'cartdata' ) );
+    if ( cart_count.length > 0 ) {
+        document.querySelector( "#cart_count" ).innerText = cart_count.length;
+    } else {
+        document.querySelector( "#cart_count" ).style.visibility = "hidden";
+    }
+}
+
+console.log( count_cart());

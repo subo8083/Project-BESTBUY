@@ -6,6 +6,10 @@
   height: 120px;
   background-color: rgb(9, 53, 197);
   font-family: Arial, Helvetica, sans-serif;
+  position:fixed;
+  width: 100%;
+  top:0;
+  left:0;
 }
 #navbar > div > div {
   display: flex;
@@ -281,7 +285,7 @@
   position: absolute;
   max-height: 400px;
   width: 34%;
-  top: 9%;
+  top: 49%;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
@@ -319,4 +323,14 @@
   box-shadow: rgba(56, 72, 221, 0.336) 0px 0px 0px 1px,
     rgb(209, 213, 219) 0px 0px 0px 1px inset;
   border: none;
+}
+#cart_count {
+  font-size: 13px;
+  position: absolute;
+  top:2%;
+  padding:5px;
+  right:5%;
+  border-radius: 45%;
+  background-color:#feef2e;
+  
 }
