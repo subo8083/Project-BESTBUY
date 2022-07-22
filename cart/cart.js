@@ -335,3 +335,6 @@ let checkout = () => {
 
 }
 
+import {navbar,count_cart} from '../navbar.js';
+
+document.querySelector("#navbar").innerHTML = navbar();
