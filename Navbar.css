@@ -23,7 +23,7 @@
   width: 15%;
 }
 #nav1 {
-  height: 35%;
+  height: 60%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -79,12 +79,12 @@
   text-decoration: none;
   color: white;
 }
-#cart a {
+#cart_icon a {
   font-size: 20px;
   color: white;
   text-decoration: none;
 }
-#cart a:hover {
+#cart_icon a:hover {
   text-decoration: underline;
 }
 
@@ -255,6 +255,7 @@
   align-items: center;
   justify-content: center;
   visibility: hidden;
+  
   /* right:30%; */
 }
 #login_sign button {
@@ -280,6 +281,10 @@
 }
 #login_sign > p:hover {
   text-decoration: none;
+  
+}
+#login_sign > p{
+  color:black;
 }
 #q_append {
   position: absolute;
@@ -325,12 +330,14 @@
   border: none;
 }
 #cart_count {
+  color:black;
   font-size: 13px;
   position: absolute;
-  top:2%;
-  padding:5px;
+  top:9%;
+  padding:3px;
   right:5%;
   border-radius: 45%;
   background-color:#feef2e;
+  visibility: hidden;
   
 }
