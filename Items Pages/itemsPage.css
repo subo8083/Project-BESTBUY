@@ -9,6 +9,7 @@
     margin-left: 50px;
     margin-top: 30px;
     margin-bottom: 30px;
+    border: 1px solid red;
     display: flex;
     gap: 30px;
 }
@@ -76,6 +77,118 @@
 #body>#head>div:last-child{
     margin-right: 50px;
 }
+
+
+
+#body #items>div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto);
+    gap: 30px;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#body #items img{
+    width: 100%;
+}
+#body #items a{
+    text-decoration: none;
+}
+#body #items>div>div{
+    border: 1px solid yellow;
+}
+#items>div>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#items>div>div:nth-child(1)>button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30%;
+    color: white;
+    background-color: #1a45bc;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+}
+#items>div>div:nth-child(2)>h5{
+    color: #318000;
+}
+#items>div>div:nth-child(2)>h6{
+    display: inline;
+    text-decoration: underline;
+}
+#items>div>div:nth-child(2)>p:nth-child(4){
+    display: inline;
+}
+#items>div>div:nth-child(2)>p:nth-child(4){
+    display: inline;
+}
+#items>div>div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+#items>div>div:last-child>h4:nth-child(1){
+    text-decoration: line-through;
+    text-decoration-color: black;
+    color: red;
+    margin-left: 10%;
+}
+#items div div:last-child #newPrice{
+    color: #318000;
+    margin-left: 10%;
+}
+#items>div>div:last-child>button{
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#items div div:last-child #save{
+    width: 40%;
+    color: white;
+    background-color: #BB0628;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10%;
+}
+#items div div:last-child #add-item{
+    width: 80%;
+    color: black;
+    font-weight: bolder;
+    background-color: #FFF200;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#items div div:last-child #save-item{
+    width: 80%;
+    color: black;
+    font-weight: bolder;
+    background-color: #FFF200;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
 
 
 
