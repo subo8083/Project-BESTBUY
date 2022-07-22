@@ -7,7 +7,6 @@
 #cartdetail {
   display: flex;
   height: 900px;
- 
 }
 .header,
 #order h1 {
@@ -18,17 +17,16 @@
 #cart {
   padding: 3%;
   width: 70%;
-   background-color: #f4f6f9;
-   overflow: scroll;
+  background-color: #f4f6f9;
+  overflow: scroll;
 }
 #order {
   width: 30%;
   border-left: 1px solid #c5cbd5;
- 
 }
 #advte {
   border: 1px solid #c5cbd5;
-   border-radius: 5px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,7 +60,7 @@
 }
 #cart_container > div {
   border: 1px solid #c5cbd5;
-   border-radius: 5px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   padding: 3%;
@@ -71,8 +69,7 @@
   height: 170px;
 }
 #cart_container > div > img {
-  height: 50%;
-  width: 10%;
+  width: 100px;
 }
 #cart_container > div > h2 {
   font-size: 13px;
@@ -167,8 +164,8 @@ p {
   background-color: #ffe000;
   font-weight: 600;
 }
-#order button:nth-child(4):hover{
-background-color: #fff200
+#order button:nth-child(4):hover {
+  background-color: #fff200;
 }
 
 #order button:nth-child(5) {
@@ -231,110 +228,107 @@ h5 {
   align-items: center;
   font-size: 18px;
 }
-.remove:hover,.save:hover,a:hover{
-  text-decoration:underline;
-   color: #061747;
-   cursor:pointer;
+.remove:hover,
+.save:hover,
+a:hover {
+  text-decoration: underline;
+  color: #061747;
+  cursor: pointer;
 }
 #saved_container {
-  padding:3%;
-   border: 1px solid #c5cbd5;
-    border-radius: 5px;
-   margin-top: 5%;
-   background-color:white;
+  padding: 3%;
+  border: 1px solid #c5cbd5;
+  border-radius: 5px;
+  margin-top: 5%;
+  background-color: white;
 }
-#saved_items{
- 
-  display:grid;
+#saved_items {
+  display: grid;
   grid-template-columns: repeat(4, 22%);
   justify-content: space-between;
-
 }
-#saved_items > div{
- border: 1px solid #c5cbd5;  
+#saved_items > div {
+  border: 1px solid #c5cbd5;
   border-radius: 5px;
-  display:grid;
-  justify-content:space-between;
-  align-items:space-between;
-  padding:4%;
+  display: grid;
+  justify-content: space-between;
+  align-items: space-between;
+  padding: 4%;
   font-size: 15px;
-
+  height: 300px;
 }
 #saved_header {
   border-bottom: 1px solid #c5cbd5;
-   border-radius: 5px;
+  border-radius: 5px;
 }
-#saved_header + p{
+#saved_header + p {
   font-weight: bold;
-  font-size:14px;
+  font-size: 14px;
 }
-#saved_items img{
-  height:70%;
-  margin:auto;
+#saved_items img {
+  height: 100px;
+  width: 55%;
+  margin: auto;
 }
-#saved_items button{
-  padding:8px;
+#saved_items button {
+  padding: 8px;
   color: #0457c8;
-  border:1px solid #0457c8;
-  border-radius:5px;
-  margin-top:2%;
+  border: 1px solid #0457c8;
+  border-radius: 5px;
+  margin-top: 2%;
   font-weight: bold;
 }
-#saved_items h3{
-  font-size :15px;
+#saved_items h3 {
+  font-size: 15px;
 }
 #saved_items > div p {
-  color:black;
+  color: black;
 }
-#cart button:hover,#emp_button:hover {
+#cart button:hover,
+#emp_button:hover {
   background: #001e73;
-border-color: #001e73;
-color: #fff;
-
+  border-color: #001e73;
+  color: #fff;
 }
-#emp_button a{
-  color:white;
+#emp_button a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
-#emp_button{
-   background-color:#0046be;
-    color:white;
+#emp_button {
+  background-color: #0046be;
+  color: white;
 }
-.price , .pri{
-  color:black;
+.price,
+.pri {
+  color: black;
 }
-#loading{
+#loading {
   position: absolute;
-  
-  width:100%;
+
+  width: 100%;
   height: 100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background-color:rgba(24, 17, 17, 0.541);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(24, 17, 17, 0.541);
   visibility: hidden;
 }
-#zero_total{
-   border-top: 1px solid #c5cbd5;
+#zero_total {
+  border-top: 1px solid #c5cbd5;
   border-bottom: 1px solid #c5cbd5;
-  padding-top:5%;
+  padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 3%;
-
 }
 #zero_total > div {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  
-  
 }
-#zero_total > div > h1:nth-child(2){
-text-align:right;
-width: 100%;
-
-
+#zero_total > div > h1:nth-child(2) {
+  text-align: right;
+  width: 100%;
 }
