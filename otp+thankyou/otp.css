@@ -1,0 +1,47 @@
+body{
+    background-image: url("https://pbs.twimg.com/ext_tw_video_thumb/1410294969902854150/pu/img/qqjrRSFa8k35HgL3.jpg:large");
+}
+
+#container{
+    width:35%;
+    height:500px;
+    /* border:1px solid blue; */
+    margin: 100px auto;
+    background-color: #a4bddb;
+    box-shadow: rgba(69, 46, 46, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 5px;
+
+}
+h2{
+    font-family: Inter, Roboto, Arial, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+p{
+    font-family: Inter, Roboto, Arial, sans-serif;
+    text-align: center;
+    font-weight: bold; 
+    color:rgb(14, 182, 28);
+    margin-top: 50px;
+}
+#input{
+   width:40%;
+   height:30px;
+   margin: 40px 0px 0px 140px;
+   padding-left: 30px;
+   background-color: white;
+  
+}
+button{
+    display: block;
+    margin: 50px auto;
+    background-color: rgb(17, 90, 226);
+    color:white;
+    width:30%;
+    height:40px;
+    border:none;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
