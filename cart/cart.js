@@ -1,3 +1,12 @@
+import { navbar, count_cart,takequery,show_log_menu,showmenu } from '../navbar.js';
+document.querySelector( "#navbar" ).innerHTML = navbar();
+ document.querySelector( "#search" ).addEventListener( "keypress", (ele) => {
+     takequery(ele)
+ } );
+count_cart()
+document.querySelector( "#menu" ).addEventListener( "click", showmenu );
+document.querySelector( "#ac_menu" ).addEventListener( "click", show_log_menu );
+
 // -temparory........................
 let temp = [ {
     "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Beats_vt_2021_K_ai_renditionpicker_319x319-214271.png;maxHeight=70;maxWidth=120",
@@ -222,6 +231,7 @@ else {
 // first append over.......
 
 let changevalue = ( arr, ele, index ) => {
+    count_cart()
     let val = document.querySelector( `#cart_container div:nth-child(${ index + 1 }) select` ).value;
     arr[ index ].quantity = val;
     localStorage.setItem( "cartdata", JSON.stringify( arr ) );
@@ -241,6 +251,7 @@ let remove_items = ( data, index, container ) => {
     let details = JSON.parse( localStorage.getItem( "cartdata" ) );
 
     total( details );
+    count_cart()
 
 
 
@@ -298,11 +309,14 @@ let save_append = ( data, container ) => {
 save_append( savedItems, saved_content );
 
 let remove_saveditems = ( data, index, container ) => {
+   
     data.splice( index, 1 );
     save_append( data, container );
     localStorage.setItem( "savedItems", JSON.stringify( data ) )
+    count_cart()
 }
 let add_to_save = ( data, index, container, ele ) => {
+    
     savedItems.push( ele );
     save_append( savedItems, saved_content );
     localStorage.setItem( "savedItems", JSON.stringify( savedItems ) )
@@ -310,7 +324,7 @@ let add_to_save = ( data, index, container, ele ) => {
     let details = JSON.parse( localStorage.getItem( "cartdata" ) );
 
     total( details );
-
+    count_cart()
 
 }
 let add_to_container = ( data, index, container, ele ) => {
@@ -321,6 +335,7 @@ let add_to_container = ( data, index, container, ele ) => {
     let details = JSON.parse( localStorage.getItem( "cartdata" ) );
 
     total( details );
+    count_cart()
 
 }
 
