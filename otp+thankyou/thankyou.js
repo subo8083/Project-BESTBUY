@@ -1,3 +1,9 @@
+// import { navbar, count_cart, takequery, show_log_menu,showmenu} from "../navbar.js"
+
+// document.getElementById("navbar").innerHTML=navbar()
+
+
+
 let popup=document.getElementById("popup");
 let cont=document.getElementById("cont")
 // coun(openpopup,5000)
@@ -41,3 +47,4 @@ function coun(func,delay){
 
   },delay)
 }
+

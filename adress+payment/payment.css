@@ -320,6 +320,8 @@ color:#0046be
     font-family: Inter, Roboto, Arial, sans-serif; 
 }
   
-
-
+#amt1,#amt2{
+    font-weight: bold;
+    color:#d1a53e;
+}
 
