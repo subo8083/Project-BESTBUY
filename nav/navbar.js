@@ -1,7 +1,9 @@
 function navbar() {
     return ` <div id="nav1">
             <div>
+
             <img id="logo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png;maxHeight=80;maxWidth=136">
+            
             <div id="menu">
             <i onclick = "showmenu()"class="fa fa-bars" style="font-size:20px"></i>
             <a  id="menuclose">Menu</a>
@@ -70,6 +72,10 @@ function showmenu() {
     document.querySelector( "#options" ).style.visibility = "visible";
     console.log( '123' )
 }
+function mainpage() {
+    window.location.href ="../../BestBuy/index.html"
+}
+
 // it is closing the menu tab if we click on 1st bar of navbar
 document.addEventListener( "click", function ( event ) {
     if ( ( event.target.matches( "#nav1" ) ) && ( ( !event.target.closest( "#options" ) ) || ( !event.target.closest( "#login_sign" ) ) || ( !event.target.closest( "#q_append" ) ) ) ) {
@@ -161,4 +167,4 @@ let count_cart = () => {
 
 // console.log( count_cart());
 
-export { navbar, count_cart, takequery, show_log_menu,showmenu}
+export { navbar, count_cart, takequery, show_log_menu,showmenu,mainpage}
