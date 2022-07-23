@@ -6,7 +6,7 @@ let carousal=()=>{
         <div class="carousel-item active container-fluid ">
             <div id="slide" class="commonCSS">
                 <div class="slideData">
-                    <a id="card4" href="laptops.html">
+                    <a id="card4" href="../PRODUCT PAGES(2)/laptops.html">
                         <div>
                         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6503/6503229_sd.jpg;maxHeight=140;maxWidth=140" alt="">
                         <p>Laptops & Computers</p>
