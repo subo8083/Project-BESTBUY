@@ -134,13 +134,15 @@ let query_append = ( data ) => {
 
 
 let count_cart = () => {
-    let cart_count = JSON.parse( localStorage.getItem( 'cartdata' ) );
+    let cart_count = JSON.parse( localStorage.getItem( 'cart-items' ) ) || [];
     if ( cart_count.length > 0 ) {
         document.querySelector( "#cart_count" ).style.visibility = 'visible';
         document.querySelector( "#cart_count" ).innerText = cart_count.length;
+        // window.location.reload();
     } else {
         document.querySelector( "#cart_count" ).style.visibility = "hidden";
     }
+
 }
 
 // console.log( count_cart());
