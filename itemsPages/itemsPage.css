@@ -10,7 +10,7 @@
     margin-left: 50px; */
     margin-top: 150px;
     margin-bottom: 30px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     gap: 30px;
 }
