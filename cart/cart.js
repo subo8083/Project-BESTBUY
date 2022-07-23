@@ -1,4 +1,4 @@
-import { navbar, count_cart,takequery,show_log_menu,showmenu } from '../../nav/navbar.js';
+import { navbar, count_cart,takequery,show_log_menu,showmenu } from '../nav/navbar.js';
 document.querySelector( "#navbar" ).innerHTML = navbar();
  document.querySelector( "#search" ).addEventListener( "keypress", (ele) => {
      takequery(ele)

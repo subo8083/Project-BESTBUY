@@ -1,0 +1,344 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#navbar {
+  height: 120px;
+  background-color: rgb(9, 53, 197);
+  font-family: Arial, Helvetica, sans-serif;
+  position:fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  position: relative;
+}
+#navbar > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar > div > div:nth-child(1) {
+  width: 55%;
+}
+#navbar > div > div:nth-child(2) {
+  width: 15%;
+}
+#nav1 {
+  height: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 2% 1% 2%;
+  font-weight: bold;
+  border-bottom: 1px solid #4976e6;
+}
+#nav1 i {
+  font-size: 30px;
+  color: white;
+}
+#nav1 i:nth-child(2) {
+  font-size: 23px;
+  color: blue;
+  background-color: white;
+  padding: 2px;
+}
+#menu a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+#logo {
+  /* width:10%; */
+  height: 90%;
+}
+
+#searchbar {
+  width: 65%;
+  display: flex;
+  height: 90%;
+  border-radius: 5px;
+  background-color: white;
+}
+#searchbar button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 5px;
+}
+#searchbar input {
+  height: 100%;
+  width: 91%;
+  border: none;
+  padding-left: 2%;
+  font-size: 16px;
+  color: #666262;
+  border-radius: 5px;
+}
+#location a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+#cart_icon a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+#cart_icon a:hover {
+  text-decoration: underline;
+}
+
+#nav2 {
+  display: flex;
+  padding: 1% 2% 1% 2%;
+  font-size: 13px;
+  font-weight: bold;
+  justify-content: space-between;
+  height: 20%;
+}
+#nav2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+#nav2 a:hover,
+#nav2 p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 520px) and (max-width: 760px) {
+  #nav1 a {
+    font-size: 14px;
+  }
+  #nav1 i {
+    font-size: 18px;
+  }
+  #nav1 i:nth-child(2) {
+    font-size: 16px;
+    padding: 1px;
+  }
+  #nav2 a {
+    font-size: 14px;
+  }
+  form {
+    width: 30px;
+    height: 11px;
+  }
+  form > input {
+    width: 25px;
+    height: 10px;
+  }
+}
+
+@media only screen and (min-width: 260px) and (max-width: 519px) {
+  #nav1 a {
+    font-size: 7px;
+  }
+  #nav1 i {
+    font-size: 9px;
+  }
+  #nav1 i:nth-child(2) {
+    font-size: 9px;
+    padding: 1px;
+  }
+  #nav2 a {
+    font-size: 7px;
+  }
+  form {
+    width: 25px;
+    height: 9px;
+  }
+  input {
+    width: 30px;
+    height: 7px;
+  }
+}
+
+@media only screen and (min-width: 170px) and (max-width: 259px) {
+  #nav1 a {
+    font-size: 4px;
+  }
+  #nav1 i {
+    font-size: 5px;
+    padding: 0%;
+  }
+  #nav2 a {
+    font-size: 5px;
+  }
+  form {
+    width: 20px;
+    height: 7px;
+  }
+  input {
+    width: 15px;
+    height: 4px;
+  }
+}
+#options {
+  position: absolute;
+  top: 60px;
+  left: 10%;
+  height: 500px;
+  overflow: scroll;
+  padding: 1%;
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  visibility: hidden;
+}
+#options > div {
+  width: 300px;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(218, 224, 230);
+  color: #0752c6;
+  font-weight: none;
+}
+#options div > i {
+  background-color: none;
+}
+.arrow {
+  /* border-left: 1px solid;
+    border-bottom: 1px solid; */
+  width: 20px;
+  height: 20px;
+  transform: rotate(133deg);
+  position: fixed;
+  top: 55px;
+  left: 15%;
+  background-color: white;
+}
+.arrow2 {
+  width: 15px;
+  height: 15px;
+  top: -20px;
+  left: -70px;
+  transform: rotate(133deg);
+  position: relative;
+  background-color: white;
+  border-radius: 2px;
+}
+#options > div > p {
+  font-size: 16px;
+}
+#container {
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+#search::placeholder {
+  background-image: green;
+}
+#login_sign {
+  position: absolute;
+  top: 110px;
+  right: 25%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  height: 230px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  
+  /* right:30%; */
+}
+#login_sign button {
+  width: 100%;
+  height: 15%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#login_sign > button:nth-child(3) {
+  background-color: #0046be;
+  color: white;
+}
+#login_sign > button:nth-child(3):hover,
+#login_sign > button:nth-child(4):hover {
+  background-color: #001e73;
+  color: white;
+}
+#login_sign > button:nth-child(4) {
+  border: 1px solid #0046be;
+  color: #0046be;
+}
+#login_sign > p:hover {
+  text-decoration: none;
+  
+}
+#login_sign > p{
+  color:black;
+}
+#q_append {
+  position: absolute;
+  max-height: 400px;
+  width: 34%;
+  top: 49%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  overflow: scroll;
+  visibility: hidden;
+}
+#q_append > div {
+  width: 90%;
+  background-color: white;
+  display: flex;
+  height: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1%;
+  border-bottom: 1px solid #666262;
+}
+#q_append > div > img {
+  height: 60px;
+  width: 13%;
+}
+#q_append > div > h5 {
+  overflow: hidden;
+  font-size: 13px;
+  width: 50%;
+}
+#q_append > div > h4 {
+  background-color: #bb0628;
+  color: white;
+  font-size: 90%;
+  padding: 1%;
+}
+#q_append > div:hover {
+  box-shadow: rgba(56, 72, 221, 0.336) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border: none;
+}
+#cart_count {
+  color:black;
+  font-size: 13px;
+  position: absolute;
+  top:9%;
+  padding:3px;
+  right:5%;
+  border-radius: 45%;
+  background-color:#feef2e;
+  visibility: hidden;
+  
+}
