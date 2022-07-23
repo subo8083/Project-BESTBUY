@@ -348,3 +348,10 @@
   visibility: hidden;
   
 }
+#NaMe{
+  /* text-align: center; */
+  /* margin-left: 100px; */
+  color: aqua;
+  margin-left: 100px;
+  margin-top: 15px;
+}

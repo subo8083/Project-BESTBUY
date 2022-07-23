@@ -56,5 +56,5 @@ data.forEach(function(el){
 }
 
 function clickme(){
-window.location.href="itemsPage-kitchen.html"
+window.location.href="../itemsPages/itemsPage-kitchen.html"
 }

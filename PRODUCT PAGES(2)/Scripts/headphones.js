@@ -77,7 +77,7 @@ data.forEach(function(el){
 
 function clickme(){
 //<<<<<<< HEAD
-window.location.href="itemsPage-headPhones.html"
+window.location.href="../itemsPages/itemsPage-headPhones.html"
 }
 //=======
 // window.location.href="Dummy.html"

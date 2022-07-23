@@ -58,5 +58,5 @@ data.forEach(function(el){
 }
 
 function clickme(){
-window.location.href="itemsPage-Apple.html"
+window.location.href="../itemsPages/itemsPage-Apple.html"
 }

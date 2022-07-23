@@ -23,17 +23,26 @@ function navbar() {
                 <div><p>Audio   </p> <i class="fa fa-angle-right" style="font-size:20px ; color:#0752c6 ;background-color:transparent"></i></div>
             </div>
             </div>
+            
             <div id="searchbar">
                <input type="text" id="search" placeholder="Search Best Buy"/>
                 <button style="font-family:Arial, FontAwesome;text-align: right ; color:#0752c6">&#xF002</button>
                 <div id="q_append"></div>
+                
             </div>
+            
+            
+            
             </div>
+            <p id="NaMe"></p>
+            
             <div>
             <div id="location">
             <i class="fa fa-map-location-dot"></i>
             <a href="">Aiea</a>
             </div>
+            
+            
             <div id="cart_icon">
                 <div>
                 <i class="fa fa-cart-shopping" ></i>
@@ -59,8 +68,8 @@ function navbar() {
                     <div class="arrow2"></div>
                     <p>Becoming a My Best Buy® member comes with
                     easy order tracking, rewards, offers and more.</p>
-                    <button>Sign in</button>
-                    <button>Create Account</button>
+                    <button id="logINN">Log in</button>
+                    <button id="signUPP">Create Account</button>
                 </div>
                  <p id="" style="color: white;">Order Status <i class="fa fa-angle-down" style="font-size:13px"></i></p>
                 <p id="" style="color: white;">Saved Items <i class="fa fa-angle-down" style="font-size:13px"></i></p>
@@ -68,6 +77,7 @@ function navbar() {
                
           
         </div>`
+        
 }
 
 function showmenu() {
@@ -168,5 +178,14 @@ let count_cart = () => {
 }
 
 // console.log( count_cart());
+
+// document.querySelector("#logINN").addEventListener("click",myLOG);
+
+// function myLOG()
+// {
+//     window.location.href="../SIGNUP login/login.html"
+// }
+
+
 
 export { navbar, count_cart, takequery, show_log_menu,showmenu,mainpage}

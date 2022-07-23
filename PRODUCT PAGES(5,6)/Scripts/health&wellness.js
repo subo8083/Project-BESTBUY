@@ -56,5 +56,5 @@ data.forEach(function(el){
 }
 
 function clickme(){
-window.location.href="itemsPage-Personal.html"
+window.location.href="../itemsPages/itemsPage-techFun.html"
 }

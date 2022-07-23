@@ -474,5 +474,27 @@
 
     
     submit.addEventListener('click', subscribeEmail);
+
+    document.querySelector("#logINN").addEventListener("click",myLOG);
+
+function myLOG()
+{
+    window.location.href="../SIGNUP login/login.html"
+}
+   
+
+document.querySelector("#signUPP").addEventListener("click",mySIGN);
+
+function mySIGN()
+{
+    window.location.href="../SIGNUP login/signup.html"
+}
+
+
+var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
+
+let naME=document.getElementById("NaMe")
+naME.innerText=" Welcome "+data[0].name
+
 </script>
 

@@ -59,5 +59,14 @@ data.forEach(function(el){
 }
 
 function clickme(){
-window.location.href="itemsPage-laptop.html"
+window.location.href="../itemsPages/itemsPage-laptop.html"
 }
+
+document.getElementById("but").addEventListener("click",Shoop)
+let Shoop=()=>{
+    window.location.href="laptops.html"
+}
+var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
+
+let naME=document.getElementById("NaMe")
+naME.innerText=" Welcome "+data[0].name

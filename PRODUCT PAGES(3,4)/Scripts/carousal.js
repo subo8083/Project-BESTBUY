@@ -20,7 +20,7 @@ let carousal=()=>{
                         </div>
                     </a>
 
-                    <a id="card6" href="headphones.html">
+                    <a id="card6" href="../PRODUCT PAGES(2)/headphones.html">
                         <div>
                         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443995_sd.jpg;maxHeight=140;maxWidth=140" alt="">
                         <p>Headphones</p>
@@ -41,14 +41,14 @@ let carousal=()=>{
                         </div>
                     </a>
 
-                    <a id="card8" href="kitchen.html">
+                    <a id="card8" href="../PRODUCT PAGES(5,6)/kitchen.html">
                         <div >
                         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4598/4598501_rd.jpg;maxHeight=140;maxWidth=140" alt="">
                         <p>Small Kitchen Appliences</p>
                         </div>
                     </a>
                     
-                    <a id="card9" href="health&wellness.html">
+                    <a id="card9" href="../PRODUCT PAGES(5,6)/healthAndwellness.html">
                         <div >
                         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6488/6488605_rd.jpg;maxHeight=140;maxWidth=140" alt="">
                         <p>Health & Wellness</p>
