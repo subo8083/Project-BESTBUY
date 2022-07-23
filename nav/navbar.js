@@ -48,7 +48,7 @@ function navbar() {
         </div></div>
           <div id="nav2">
            
-                <a href="#">Top Deals</a>
+                <a href="../PRODUCT PAGES(2)/laptops.html">Top Deals</a>
                 <a href="#">Deals of the day</a>
                 <a href="#">Totaltech membership</a>
                 <a href="#">Credit card</a>
