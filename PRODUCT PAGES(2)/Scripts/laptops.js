@@ -62,10 +62,10 @@ function clickme(){
 window.location.href="../itemsPages/itemsPage-laptop.html"
 }
 
-document.getElementById("but").addEventListener("click",Shoop)
-let Shoop=()=>{
-    window.location.href="laptops.html"
-}
+// document.getElementById("but").addEventListener("click",Shoop)
+// let Shoop=()=>{
+//     window.location.href="laptops.html"
+// }
 var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
 
 let naME=document.getElementById("NaMe")

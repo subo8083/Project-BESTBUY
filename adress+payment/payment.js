@@ -9,7 +9,7 @@ let proceed=(event)=>{
     let enteredexpiry=document.querySelector("#date").value;
     
     if(enterednum==cardnum && enteredcvv==cvv && enteredexpiry==expiry){
-         window.location.href="otp.html";
+         window.location.href="../otp+thankyou/otp.html";
         }else{
             alert("Invalid Credentials!");
             document.querySelector("#cardno").value="";

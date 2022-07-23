@@ -318,4 +318,9 @@ let sorting = () =>{
 
     
     submit.addEventListener('click', subscribeEmail);
+    
+var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
+
+let naME=document.getElementById("NaMe")
+naME.innerText=" Welcome "+data[0].name
 </script>
