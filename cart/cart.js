@@ -3,6 +3,8 @@ document.querySelector( "#navbar" ).innerHTML = navbar();
  document.querySelector( "#search" ).addEventListener( "keypress", (ele) => {
      takequery(ele)
  } );
+import footer from "../../footers/footer.js"
+document.getElementById( "footer" ).innerHTML = footer()
 count_cart()
 document.querySelector( "#menu" ).addEventListener( "click", showmenu );
 document.querySelector( "#ac_menu" ).addEventListener( "click", show_log_menu );
@@ -267,9 +269,10 @@ let add_to_container = ( data, index, container, ele ) => {
 //*********************** */
 let checkout = () => {
     // let data = JSON.parse( localStorage.getItem( "cartdata" ) );
-    //let total = document.querySelector( "#total_amt" );
+    let total = document.querySelector( "#total_amt" );
     //localStorage.setItem( "####", JSON.stringify(total) );
-    // //window.location.href = '';
+    window.location.href = '../adress+payment/AddressPage.html';
 
 }
+document.querySelector( "#checkout" ).addEventListener( "click", checkout );
 
