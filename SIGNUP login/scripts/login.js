@@ -22,7 +22,7 @@ function checkUser() {
         // alert("Login sucessfully")
 
             //localStorage.setItem("user",)
-             window.location.href="index.html"
+             window.location.href="../Home/index.html"
 
 
     } else {

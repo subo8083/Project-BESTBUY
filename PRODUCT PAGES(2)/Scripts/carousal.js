@@ -13,7 +13,7 @@ let carousal=()=>{
                         </div>
                     </a>
                     
-                    <a id="card5" href="apple.html">
+                    <a id="card5" href="../PRODUCT PAGES(3,4)/apple.html">
                         <div >
                         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443321_sd.jpg;maxHeight=140;maxWidth=140" alt="">
                         <p>Apple</p>
@@ -34,21 +34,21 @@ let carousal=()=>{
         <div class="carousel-item container-fluid">
             <div id="slide2" class="commonCSS">
                 <div class="slideData">
-                    <a id="card7" href="majorAppliances.html"> 
+                    <a id="card7" href="../PRODUCT PAGES(3,4)/majorAppliances.html"> 
                         <div >
                         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6168/6168626_sd.jpg;maxHeight=140;maxWidth=140" alt="">
                         <p>Major Appliances</p>
                         </div>
                     </a>
 
-                    <a id="card8" href="kitchen.html">
+                    <a id="card8" href="../PRODUCT PAGES(5,6)/kitchen.html">
                         <div >
                         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4598/4598501_rd.jpg;maxHeight=140;maxWidth=140" alt="">
                         <p>Small Kitchen Appliences</p>
                         </div>
                     </a>
                     
-                    <a id="card9" href="health&wellness.html">
+                    <a id="card9" href="../PRODUCT PAGES(5,6)/healthAndwellness.html">
                         <div >
                         <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6488/6488605_rd.jpg;maxHeight=140;maxWidth=140" alt="">
                         <p>Health & Wellness</p>
