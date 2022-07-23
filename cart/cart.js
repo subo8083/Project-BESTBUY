@@ -3,7 +3,7 @@ document.querySelector( "#navbar" ).innerHTML = navbar();
  document.querySelector( "#search" ).addEventListener( "keypress", (ele) => {
      takequery(ele)
  } );
-import footer from "../../footers/footer.js"
+import footer from "../footers/footer.js"
 document.getElementById( "footer" ).innerHTML = footer()
 count_cart()
 document.querySelector( "#menu" ).addEventListener( "click", showmenu );
@@ -275,4 +275,9 @@ let checkout = () => {
 
 }
 document.querySelector( "#checkout" ).addEventListener( "click", checkout );
+
+var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
+
+let naME=document.getElementById("NaMe")
+naME.innerText=" Welcome "+data[0].name
 

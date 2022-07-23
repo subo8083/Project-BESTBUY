@@ -84,3 +84,8 @@ window.location.href="../itemsPages/itemsPage-headPhones.html"
 // }
 
 //>>>>>>> fb693d205eb95961be821a72c597b3dfd041917a
+
+var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
+
+let naME=document.getElementById("NaMe")
+naME.innerText=" Welcome "+data[0].name

@@ -29,7 +29,7 @@ function openpopy(){
 
 function closepopup(){
     // popup.classList.remove("open-popup");
-    window.location.href="index.html"
+    window.location.href="../Home/index.html"
 }
 
 

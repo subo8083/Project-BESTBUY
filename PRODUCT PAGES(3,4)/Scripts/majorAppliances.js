@@ -58,3 +58,8 @@ data.forEach(function(el){
 function clickme(){
 window.location.href="../itemsPages/itemsPage-techFun.html"
 }
+
+var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
+
+let naME=document.getElementById("NaMe")
+naME.innerText=" Welcome "+data[0].name

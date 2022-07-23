@@ -84,6 +84,13 @@
   font-size: 20px;
   text-decoration: none;
   color: white;
+  margin-right: 18px;
+  
+}
+#location{
+  display: flex;
+
+
 }
 #cart_icon a {
   font-size: 20px;
@@ -351,7 +358,14 @@
 #NaMe{
   /* text-align: center; */
   /* margin-left: 100px; */
-  color: aqua;
+  color: #fff;
   margin-left: 100px;
-  margin-top: 15px;
+  margin-top: 17px;
+  font-size: 20px;
+
 }
+/* #aiea{
+  display: flex;
+  margin-right: 15px;
+
+} */

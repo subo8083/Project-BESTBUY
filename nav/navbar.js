@@ -39,7 +39,7 @@ function navbar() {
             <div>
             <div id="location">
             <i class="fa fa-map-location-dot"></i>
-            <a href="">Aiea</a>
+            <a id="aiea" href="">Aiea</a>
             </div>
             
             
@@ -109,6 +109,8 @@ function closehelp() {
 //     takequery(ele)
 // } );
 
+let araaY=[]
+
 function takequery( ele ) {
     if ( ele.key == "Enter" ) {
         let query = document.querySelector( "#search" ).value;
@@ -120,6 +122,7 @@ function takequery( ele ) {
     } ).then( ( res ) => {
         let data = res.products;
         query_append( data [query]);
+        araaY.push(query)
     } ).catch( ( err ) => {
         console.log( err );
         document.querySelector( "#q_append" ).innerHTML = `<p style = "text-align:center ; margin-top:5%; color:gray" : center>Product not found !!</p>`;
@@ -146,6 +149,10 @@ let query_append = ( data ) => {
             save.innerText = `Save ${ ele.save }`; 
         }
         
+        div.addEventListener("click",function(){
+
+            showing()
+        })
         div.append( image, h3, save );
         container.append( div );
     } );
@@ -185,7 +192,27 @@ let count_cart = () => {
 // {
 //     window.location.href="../SIGNUP login/login.html"
 // }
+// var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
 
+// let naME=document.getElementById("NaMe")
+// naME.innerText=" Welcome "+data[0].name
 
+function showing(){
+    let query = document.querySelector( "#search" ).value;
+    if(query=="laptops")
+    {
+         window.location.href="../itemsPages/itemsPage-laptop.html"
+    }
+    if(query=="kitchen")
+    {
+        window.location.href="../itemsPages/itemsPage-kitchen.html"
+    }
+    if(query=="headphones")
+    {
+        window.location.href="../itemsPages/itemsPage-headPhones.html"
+    }
+
+    
+}
 
 export { navbar, count_cart, takequery, show_log_menu,showmenu,mainpage}

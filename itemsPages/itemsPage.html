@@ -161,4 +161,9 @@
         alert('Now you are successfully subscribed for our hottest deals, coolest new products and exclusive sales events.')
     };
     submit.addEventListener('click', subscribeEmail);
+
+    var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
+
+let naME=document.getElementById("NaMe")
+naME.innerText=" Welcome "+data[0].name
 </script>
