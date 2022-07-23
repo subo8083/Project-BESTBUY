@@ -1,0 +1,89 @@
+/* *{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-align: center;
+} */
+#sectionTop, #sectionBottom{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+#footer{
+    background-color: #f4f6f9;
+    font-size: 15px;
+    margin-top: 25px;
+}
+#footer>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+#footer a{
+    text-decoration: none;
+    color: black;
+}
+#footer a:hover{
+    color: rgb(42, 42, 249);
+}
+#footer>#sectionTop{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#footer>#sectionBottom{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* grid-template-rows: repeat(auto); */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#mobileApps a img{
+    width: 7%;
+}
+#footer>#sectionTop>div>h3, #footer>#sectionBottom>div>h3{
+    margin-bottom: 20px;
+}
+#footer>#sectionTop>div p, #footer>#sectionBottom>div p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#subscribe input{
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+#subscribe button{
+    height: 30px;
+    width: 20%;
+    border: none;
+    color: white;
+    background-color: blue;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+#subscribe button:hover{
+    background-color: rgb(142, 133, 133);
+    color: blue;
+}
+
+#socialHandle{
+    display: flex;
+    margin-top: 20px;
+}
+#socialHandle img{
+    width: 50%;
+}

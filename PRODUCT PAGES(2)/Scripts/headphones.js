@@ -1,11 +1,26 @@
+// import {navbar} from "../nbar/navbar"
+// document.getElementById("navbar").innerHTML=navbar()
 
 import carousal from "./carousal.js";
-
 document.getElementById("carousal").innerHTML=carousal()
+
+import { navbar, count_cart,takequery,show_log_menu,showmenu } from "../../navbar.js";
+document.querySelector( "#navbar" ).innerHTML = navbar();
+ document.querySelector( "#search" ).addEventListener( "keypress", (ele) => {
+     takequery(ele)
+ } );
+// count_cart()
+document.querySelector( "#menu" ).addEventListener( "click", showmenu );
+document.querySelector( "#ac_menu" ).addEventListener( "click", show_log_menu );
+
+import footer from "../../footers/footer.js"
+document.getElementById("fotr").innerHTML=footer()
+
+
 
 const url=`https://suranjanachary.github.io/db/db.json`
 
-let getData=async()=>{
+let getData=async()=>{ 
 let res=await fetch(url);
 let data=await res.json();
 appendData(data.products.headphones)
@@ -45,5 +60,5 @@ data.forEach(function(el){
 }
 
 function clickme(){
-window.location.href="Dummy.html"
+window.location.href="itemsPage-headPhones.html"
 }
