@@ -1,14 +1,16 @@
+
 #headerPart{
     display: flex;
     margin: auto;
     width: 95%;
-    height: 700px;
+    /* height: 700px; */
     /* border: 1px solid black; */
     gap: 20px;
+    margin-top: 50px;
 }
 #firstImage{
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
     /* border: 1px solid green; */
     background-image: url("https://pisces.bbystatic.com/image2/BestBuy_US/dam/MMT-510776_2022TopDeals-GHPApp-LV-55adde1f-dd0b-48d7-9a08-b28bbc00187d.jpg");
     background-position: center;
