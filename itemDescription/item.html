@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Navbar.css">
+    <link rel="stylesheet" href="../footers/footer.css">
+    <title>Item</title>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <div id="footer"></div>
+</body>
+</html>
+
+
+<script type="module">
+    import { navbar, count_cart,takequery,show_log_menu,showmenu } from '../navbar.js';
+    document.querySelector( "#navbar" ).innerHTML = navbar();
+    document.querySelector( "#search" ).addEventListener( "keypress", (ele) => {
+        takequery(ele)
+    } );
+    count_cart()
+    document.querySelector( "#menu" ).addEventListener( "click", showmenu );
+    document.querySelector( "#ac_menu" ).addEventListener( "click", show_log_menu );
+</script>
+
+<script type="module">
+    import footer from "../footers/footer.js"
+    document.getElementById("footer").innerHTML = footer();
+    console.log();
+    
+    let submit=document.getElementById('submit');
+
+    let subscribers=JSON.parse(localStorage.getItem('subEmail')) || [];
+    let subscriberAlert = () => {
+        alert('Now you are successfully subscribed for our hottest deals, coolest new products and exclusive sales events.')
+    };
+    let subscribeEmail = () => {
+        let email=document.getElementById('email').value;
+        subscribers.push(email);
+        localStorage.setItem('subEmail', JSON.stringify(subscribers));
+        setTimeout(subscriberAlert, 1000);
+        // clearTimeout(infoAlert);
+        document.getElementById('email').value = null;
+    };
+
+    
+    submit.addEventListener('click', subscribeEmail);
+</script>
