@@ -2,7 +2,7 @@ import carousal from "./carousal.js";
 
 document.getElementById("carousal").innerHTML=carousal()
 
-import { navbar, count_cart,takequery,show_log_menu,showmenu } from "../../navbar.js";
+import { navbar, count_cart, takequery, show_log_menu, showmenu } from "../../nav/navbar.js";
 document.querySelector( "#navbar" ).innerHTML = navbar();
  document.querySelector( "#search" ).addEventListener( "keypress", (ele) => {
      takequery(ele)
@@ -13,7 +13,9 @@ document.querySelector( "#ac_menu" ).addEventListener( "click", show_log_menu );
 
 import footer from "../../footers/footer.js"
 document.getElementById("fotr").innerHTML=footer()
-
+function mainpage() {
+    window.location.href = "../../BestBuy/index.html"
+}
 const url=`https://suranjanachary.github.io/db/db.json`
 
 let getData=async()=>{
