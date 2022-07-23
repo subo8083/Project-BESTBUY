@@ -1,4 +1,4 @@
-import { navbar, count_cart,takequery,show_log_menu,showmenu } from '../navbar.js';
+import { navbar, count_cart,takequery,show_log_menu,showmenu } from '../nav/navbar.js';
 document.querySelector( "#navbar" ).innerHTML = navbar();
  document.querySelector( "#search" ).addEventListener( "keypress", (ele) => {
      takequery(ele)
@@ -8,87 +8,87 @@ document.querySelector( "#menu" ).addEventListener( "click", showmenu );
 document.querySelector( "#ac_menu" ).addEventListener( "click", show_log_menu );
 
 // -temparory........................
-let temp = [ {
-    "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Beats_vt_2021_K_ai_renditionpicker_319x319-214271.png;maxHeight=70;maxWidth=120",
-    "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397391cv11d.jpg;maxHeight=640;maxWidth=550",
-    "desc1": "Beats Fit Pro.",
-    "desc2": "Beats by Dr. Dre - Beats Fit Pro True Wireless Noise Cancelling In-Ear Earbuds - Black",
-    "Model": "MK2F3LL/A",
-    "SKU": "6397391",
-    "rating": "4.5",
-    "price": "$199.99",
-    "addon": "6 free months of Apple Music & 2 more"
-},
-    {
-        "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Sony_NoR_K_4C_ai_renditionpicker_319x319-91923.png;maxHeight=70;maxWidth=120",
-        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479557_sd.jpg;maxHeight=640;maxWidth=550",
-        "desc1": "Sony Wireless Noise Cancelling Over-The-Ear Headphones",
-        "desc2": "Sony - WH-XB910N Wireless Noise Cancelling Over-The-Ear Headphones - Gray",
-        "Model": "WHXB910N/H",
-        "SKU": "6479557",
-        "rating": "4.6",
-        "price": "$249.99",
-        "addon": "6 free months of Apple Music"
-    },
-    {
-        "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/JBL_4c_eps_renditionpicker_319x319-92000.png;maxHeight=70;maxWidth=120",
-        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463747_rd.jpg;maxHeight=640;maxWidth=550",
-        "desc1": "JBL - Tour One Wireless Over-Ear Noise Cancelling Headphone",
-        "desc2": "JBL - Tour One Wireless Over-Ear Noise Cancelling Headphones - Black",
-        "Model": "JBLTOURONEBLKAM",
-        "SKU": "6463747",
-        "rating": "4.1",
-        "price": "$299.99",
-        "save": "$150",
-        "newPrice": "$149.99",
-        "addon": "15-DAY FREE & EASY RETURNS"
-    },
-    {
-        "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Sennheiser_hz_K_RGB_ai_renditionpicker_319x319-95170.png;maxHeight=70;maxWidth=120",
-        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6460/6460170_sd.jpg;maxHeight=640;maxWidth=550",
-        "desc1": "CX True Wireless Black",
-        "desc2": "Sennheiser - CX True Wireless Earbud Headphones - Black",
-        "Model": "CX True Wireless Black",
-        "SKU": "6460170",
-        "rating": "4.2",
-        "price": "$129.99",
-        "save": "$50",
-        "newPrice": "$79.99",
-        "addon": "Free 6-month security software"
-    },
-    {
-        "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/SkullCandy_K_ai_renditionpicker_319x319-92012.png;maxHeight=70;maxWidth=120",
-        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6427/6427089_sd.jpg;maxHeight=640;maxWidth=550",
-        "desc1": "Skullcandy - Hesh Evo Over-the-Ear Wireless",
-        "desc2": "Skullcandy - Hesh Evo Over-the-Ear Wireless - True Black",
-        "Model": "S6HVW-N740",
-        "SKU": "6427089",
-        "rating": "4.5",
-        "price": "$104.99",
-        "save": "$25",
-        "newPrice": "$79.99",
-        "addon": "6 free months of Apple Music & 1 more"
-    },
-    {
-        "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Beats_vt_2021_K_ai_renditionpicker_319x319-214271.png;maxHeight=70;maxWidth=120",
-        "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5920/5920901_rd.jpg;maxHeight=200;maxWidth=300",
-        "desc1": "Save $100 on select Beats Studio3 Wireless headphones.",
-        "desc2": "Beats by Dr. Dre - Beats Studio³ Wireless Noise Cancelling Headphones - Matte Black",
-        "Model": "MX3X2LL/A",
-        "SKU": " 5920901",
-        "rating": "4.9",
-        "price": "$349.99",
-        "save": "$100",
-        "newPrice": "$249.99",
-        "addon": "6 free months of Apple Music & 1 more"
-    }
-        ];
-localStorage.setItem( "savedItems", JSON.stringify( temp ) );
-localStorage.setItem( "cartdata", JSON.stringify( temp ) );
+// let temp = [ {
+//     "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Beats_vt_2021_K_ai_renditionpicker_319x319-214271.png;maxHeight=70;maxWidth=120",
+//     "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6397/6397391cv11d.jpg;maxHeight=640;maxWidth=550",
+//     "desc1": "Beats Fit Pro.",
+//     "desc2": "Beats by Dr. Dre - Beats Fit Pro True Wireless Noise Cancelling In-Ear Earbuds - Black",
+//     "Model": "MK2F3LL/A",
+//     "SKU": "6397391",
+//     "rating": "4.5",
+//     "price": "$199.99",
+//     "addon": "6 free months of Apple Music & 2 more"
+// },
+//     {
+//         "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Sony_NoR_K_4C_ai_renditionpicker_319x319-91923.png;maxHeight=70;maxWidth=120",
+//         "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6479/6479557_sd.jpg;maxHeight=640;maxWidth=550",
+//         "desc1": "Sony Wireless Noise Cancelling Over-The-Ear Headphones",
+//         "desc2": "Sony - WH-XB910N Wireless Noise Cancelling Over-The-Ear Headphones - Gray",
+//         "Model": "WHXB910N/H",
+//         "SKU": "6479557",
+//         "rating": "4.6",
+//         "price": "$249.99",
+//         "addon": "6 free months of Apple Music"
+//     },
+//     {
+//         "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/JBL_4c_eps_renditionpicker_319x319-92000.png;maxHeight=70;maxWidth=120",
+//         "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6463/6463747_rd.jpg;maxHeight=640;maxWidth=550",
+//         "desc1": "JBL - Tour One Wireless Over-Ear Noise Cancelling Headphone",
+//         "desc2": "JBL - Tour One Wireless Over-Ear Noise Cancelling Headphones - Black",
+//         "Model": "JBLTOURONEBLKAM",
+//         "SKU": "6463747",
+//         "rating": "4.1",
+//         "price": "$299.99",
+//         "save": "$150",
+//         "newPrice": "$149.99",
+//         "addon": "15-DAY FREE & EASY RETURNS"
+//     },
+//     {
+//         "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Sennheiser_hz_K_RGB_ai_renditionpicker_319x319-95170.png;maxHeight=70;maxWidth=120",
+//         "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6460/6460170_sd.jpg;maxHeight=640;maxWidth=550",
+//         "desc1": "CX True Wireless Black",
+//         "desc2": "Sennheiser - CX True Wireless Earbud Headphones - Black",
+//         "Model": "CX True Wireless Black",
+//         "SKU": "6460170",
+//         "rating": "4.2",
+//         "price": "$129.99",
+//         "save": "$50",
+//         "newPrice": "$79.99",
+//         "addon": "Free 6-month security software"
+//     },
+//     {
+//         "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/SkullCandy_K_ai_renditionpicker_319x319-92012.png;maxHeight=70;maxWidth=120",
+//         "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6427/6427089_sd.jpg;maxHeight=640;maxWidth=550",
+//         "desc1": "Skullcandy - Hesh Evo Over-the-Ear Wireless",
+//         "desc2": "Skullcandy - Hesh Evo Over-the-Ear Wireless - True Black",
+//         "Model": "S6HVW-N740",
+//         "SKU": "6427089",
+//         "rating": "4.5",
+//         "price": "$104.99",
+//         "save": "$25",
+//         "newPrice": "$79.99",
+//         "addon": "6 free months of Apple Music & 1 more"
+//     },
+//     {
+//         "logo": "https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/Beats_vt_2021_K_ai_renditionpicker_319x319-214271.png;maxHeight=70;maxWidth=120",
+//         "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5920/5920901_rd.jpg;maxHeight=200;maxWidth=300",
+//         "desc1": "Save $100 on select Beats Studio3 Wireless headphones.",
+//         "desc2": "Beats by Dr. Dre - Beats Studio³ Wireless Noise Cancelling Headphones - Matte Black",
+//         "Model": "MX3X2LL/A",
+//         "SKU": " 5920901",
+//         "rating": "4.9",
+//         "price": "$349.99",
+//         "save": "$100",
+//         "newPrice": "$249.99",
+//         "addon": "6 free months of Apple Music & 1 more"
+//     }
+//         ];
+// localStorage.setItem( "savedItems", JSON.stringify( temp ) );
+// localStorage.setItem( "cartdata", JSON.stringify( temp ) );
 // temp close -- - - - - - - -- - - ->
 // take item from localStorage....
 
-let arr = JSON.parse( localStorage.getItem( "cartdata" ) );
+let arr = JSON.parse( localStorage.getItem( "cart-items" ) );
 
 let split = ( ele ) => {
     ele = ele.replace( ',', '' );
@@ -236,8 +236,8 @@ let changevalue = ( arr, ele, index ) => {
     count_cart()
     let val = document.querySelector( `#cart_container div:nth-child(${ index + 1 }) select` ).value;
     arr[ index ].quantity = val;
-    localStorage.setItem( "cartdata", JSON.stringify( arr ) );
-    let data = JSON.parse( localStorage.getItem( "cartdata" ) );
+    localStorage.setItem( "cart-items", JSON.stringify( arr ) );
+    let data = JSON.parse( localStorage.getItem( "cart-items" ) );
 
     total( data );
     console.log( data )
@@ -249,8 +249,8 @@ let changevalue = ( arr, ele, index ) => {
 let remove_items = ( data, index, container ) => {
     data.splice( index, 1 );
     append( data, container );
-    localStorage.setItem( "cartdata", JSON.stringify( data ) );
-    let details = JSON.parse( localStorage.getItem( "cartdata" ) );
+    localStorage.setItem( "cart-items", JSON.stringify( data ) );
+    let details = JSON.parse( localStorage.getItem( "cart-items" ) );
 
     total( details );
     count_cart()
@@ -260,7 +260,7 @@ let remove_items = ( data, index, container ) => {
 }
 
 //.......................saved part .....................//
-let savedItems = JSON.parse( localStorage.getItem( "savedItems" ) );
+let savedItems = JSON.parse( localStorage.getItem( "saved-items" ) ) || [];
 savedItems.forEach( ( ele ) => {
     ele.quantity = 1;
     if ( ele.save == undefined ) {
@@ -314,16 +314,16 @@ let remove_saveditems = ( data, index, container ) => {
    
     data.splice( index, 1 );
     save_append( data, container );
-    localStorage.setItem( "savedItems", JSON.stringify( data ) )
+    localStorage.setItem( "saved-items", JSON.stringify( data ) )
     count_cart()
 }
 let add_to_save = ( data, index, container, ele ) => {
     
     savedItems.push( ele );
     save_append( savedItems, saved_content );
-    localStorage.setItem( "savedItems", JSON.stringify( savedItems ) )
+    localStorage.setItem( "saved-items", JSON.stringify( savedItems ) )
     remove_items( data, index, container );
-    let details = JSON.parse( localStorage.getItem( "cartdata" ) );
+    let details = JSON.parse( localStorage.getItem( "cart-items" ) );
 
     total( details );
     count_cart()
@@ -332,9 +332,9 @@ let add_to_save = ( data, index, container, ele ) => {
 let add_to_container = ( data, index, container, ele ) => {
     arr.push( ele );
     append( arr, cart_container );
-    localStorage.setItem( "cartdata", JSON.stringify( arr ) );
+    localStorage.setItem( "cart-items", JSON.stringify( arr ) );
     remove_saveditems( data, index, container );
-    let details = JSON.parse( localStorage.getItem( "cartdata" ) );
+    let details = JSON.parse( localStorage.getItem( "cart-items" ) );
 
     total( details );
     count_cart()
