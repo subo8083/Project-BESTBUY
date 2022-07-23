@@ -4,7 +4,11 @@
     justify-content: space-between;
     /* align-items: center; */
     margin-left: 5%;
+<<<<<<< HEAD
     /* margin-top: 500px; */
+=======
+    margin-top: 200px;
+>>>>>>> fb693d205eb95961be821a72c597b3dfd041917a
 }
 #redbox{
     background-color: #E81E25;

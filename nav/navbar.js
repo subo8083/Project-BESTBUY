@@ -1,7 +1,9 @@
 function navbar() {
     return ` <div id="nav1">
             <div>
+
             <img id="logo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png;maxHeight=80;maxWidth=136">
+            
             <div id="menu">
             <i onclick = "showmenu()"class="fa fa-bars" style="font-size:20px"></i>
             <a  id="menuclose">Menu</a>
@@ -34,7 +36,11 @@ function navbar() {
                 <div>
                 <i class="fa fa-cart-shopping" ></i>
                 <p id="cart_count"></p>
+<<<<<<< HEAD
                 <a href="cart.html">Cart</a>
+=======
+                <a href="../cart/cart.html">Cart</a>
+>>>>>>> 31eaddb4129defa6f5ca59dc29d87cd9960251b8
                 </div>
                 </div>
         </div></div>
@@ -66,6 +72,10 @@ function showmenu() {
     document.querySelector( "#options" ).style.visibility = "visible";
     console.log( '123' )
 }
+function mainpage() {
+    window.location.href ="../../BestBuy/index.html"
+}
+
 // it is closing the menu tab if we click on 1st bar of navbar
 document.addEventListener( "click", function ( event ) {
     if ( ( event.target.matches( "#nav1" ) ) && ( ( !event.target.closest( "#options" ) ) || ( !event.target.closest( "#login_sign" ) ) || ( !event.target.closest( "#q_append" ) ) ) ) {
@@ -134,15 +144,27 @@ let query_append = ( data ) => {
 
 
 let count_cart = () => {
-    let cart_count = JSON.parse( localStorage.getItem( 'cartdata' ) );
+<<<<<<< HEAD
+    let cart_count = JSON.parse( localStorage.getItem( 'cart-items' ) ) || [];
+    if ( cart_count.length > 0 ) {
+        document.querySelector( "#cart_count" ).style.visibility = 'visible';
+        document.querySelector( "#cart_count" ).innerText = cart_count.length;
+        // window.location.reload();
+    } else {
+        document.querySelector( "#cart_count" ).style.visibility = "hidden";
+    }
+
+=======
+    let cart_count = JSON.parse( localStorage.getItem( 'cart-items' ) );
     if ( cart_count.length > 0 ) {
         document.querySelector( "#cart_count" ).style.visibility = 'visible';
         document.querySelector( "#cart_count" ).innerText = cart_count.length;
     } else {
         document.querySelector( "#cart_count" ).style.visibility = "hidden";
     }
+>>>>>>> 31eaddb4129defa6f5ca59dc29d87cd9960251b8
 }
 
 // console.log( count_cart());
 
-export { navbar, count_cart, takequery, show_log_menu,showmenu}
+export { navbar, count_cart, takequery, show_log_menu,showmenu,mainpage}
