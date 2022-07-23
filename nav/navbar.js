@@ -34,7 +34,11 @@ function navbar() {
                 <div>
                 <i class="fa fa-cart-shopping" ></i>
                 <p id="cart_count"></p>
+<<<<<<< HEAD
                 <a href="cart.html">Cart</a>
+=======
+                <a href="../cart/cart.html">Cart</a>
+>>>>>>> 31eaddb4129defa6f5ca59dc29d87cd9960251b8
                 </div>
                 </div>
         </div></div>
@@ -134,13 +138,25 @@ let query_append = ( data ) => {
 
 
 let count_cart = () => {
-    let cart_count = JSON.parse( localStorage.getItem( 'cartdata' ) );
+<<<<<<< HEAD
+    let cart_count = JSON.parse( localStorage.getItem( 'cart-items' ) ) || [];
+    if ( cart_count.length > 0 ) {
+        document.querySelector( "#cart_count" ).style.visibility = 'visible';
+        document.querySelector( "#cart_count" ).innerText = cart_count.length;
+        // window.location.reload();
+    } else {
+        document.querySelector( "#cart_count" ).style.visibility = "hidden";
+    }
+
+=======
+    let cart_count = JSON.parse( localStorage.getItem( 'cart-items' ) );
     if ( cart_count.length > 0 ) {
         document.querySelector( "#cart_count" ).style.visibility = 'visible';
         document.querySelector( "#cart_count" ).innerText = cart_count.length;
     } else {
         document.querySelector( "#cart_count" ).style.visibility = "hidden";
     }
+>>>>>>> 31eaddb4129defa6f5ca59dc29d87cd9960251b8
 }
 
 // console.log( count_cart());
