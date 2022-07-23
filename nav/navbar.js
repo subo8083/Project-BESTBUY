@@ -2,7 +2,9 @@ function navbar() {
     return ` <div id="nav1">
             <div>
 
-            <img id="logo" onclick = "mainpage()"src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png;maxHeight=80;maxWidth=136">
+            <a id="test" href="../BestBuy/index.html">
+            <img id="logo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png;maxHeight=80;maxWidth=136">
+            </a>
             
             <div id="menu">
             <i onclick = "showmenu()"class="fa fa-bars" style="font-size:20px"></i>

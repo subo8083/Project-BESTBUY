@@ -53,6 +53,10 @@
   height: 90%;
   margin-top:2%;
 }
+#test>#logo{
+  width: 70px;
+  /* border: 1px solid yellow; */
+}
 
 #searchbar {
   width: 65%;
