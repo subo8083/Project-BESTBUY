@@ -10,7 +10,7 @@
   width: 100%;
   top:0;
   left:0;
-  position: relative;
+  /* position: relative; */
 }
 #navbar > div > div {
   display: flex;
@@ -51,6 +51,7 @@
 #logo {
   /* width:10%; */
   height: 90%;
+  margin-top:2%;
 }
 
 #searchbar {
