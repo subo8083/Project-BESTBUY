@@ -72,6 +72,8 @@
 
 #insideBox p {
   font-size: 13px;
+  color: rgb(9, 53, 197);
+  margin: 5%;
 }
 #insideBox img {
   width: 70%;
@@ -159,6 +161,18 @@
 }
 #middlePart > div > p {
   color: black;
+}
+a > p {
+  color: rgb(9, 53, 197);
+}
+a:hover > p {
+  color: rgb(12, 28, 81);
+}
+#footer a > p {
+  color: black;
+}
+#footer a:hover p {
+  color: rgb(9, 53, 197);
 }
 #iconImage {
   margin-top: 1%;
@@ -516,17 +530,20 @@ border: 1px solid grey;
   border: 1px solid gray;
   display: flex;
   flex-direction: column;
-  padding: 6%;
+
   justify-content: space-between;
 }
 .bigImg > img {
-  height: 60%;
-  margin: 20px 60px 0 40px;
+  height: 100%;
 }
-.bigImg > img + h2 {
-  color: rgb(9, 53, 197);
+.bigImg > h3 {
+  margin-top: -300px;
+  margin-left: 5%;
+  color: whitesmoke;
 }
-
+.bigImg2 {
+  padding: 6%;
+}
 .bigImg2 > img + h2 {
   color: rgb(9, 53, 197);
   /* margin-top: -5px; */

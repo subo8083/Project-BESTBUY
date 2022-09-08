@@ -48,13 +48,11 @@
   text-decoration: none;
   font-weight: bold;
 }
-#logo {
-  /* width:10%; */
-  height: 90%;
-  margin-top: 2%;
-}
-#test > #logo {
+
+#test > #navlogo {
   width: 70px;
+  position: fixed;
+  top: 2%;
   /* border: 1px solid yellow; */
 }
 

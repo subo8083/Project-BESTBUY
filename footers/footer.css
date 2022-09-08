@@ -65,6 +65,9 @@ h1 {
   padding-left: 10px;
   margin-right: 10px;
 }
+.input {
+  display: flex;
+}
 #subscribe button {
   height: 30px;
   width: 20%;

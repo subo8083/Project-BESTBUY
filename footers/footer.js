@@ -26,8 +26,9 @@ function footer() {
             <div id="subscribe">
                 <h3>Be The First To Know</h3>
                 <p>Sign up to stay in the loop about the hottest deals, coolest new products, and exclusive sales events.</p>
+                <div class = "input">
                 <input type="email" id="email" placeholder="Enter Email Address">
-                <button id="submit">Submit</button>
+                <button id="submit">Submit</button></div>
                 <div id="socialHandle">
                     <div><a href="https://www.facebook.com/BestBuyCanada"> <i class="fa fa-facebook" style="font-size:20px ;  background-color:transparent"></i></a></div>
                     <div><a href="https://www.instagram.com/bestbuycanada"> <i class="fa fa-instagram" style="font-size:20px ;background-color:transparent"></i></a></div>

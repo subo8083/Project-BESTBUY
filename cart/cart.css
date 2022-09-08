@@ -91,8 +91,7 @@
   background-color: #fff;
   color: #040c13;
 }
-#count + p,
-p {
+#count + p {
   margin-top: 4px;
   margin-bottom: 6px;
   font-size: 12px;
@@ -198,7 +197,7 @@ p {
 }
 #card_add img {
   width: 82px;
-  
+
   margin-bottom: 12px;
 }
 #card_add > div {

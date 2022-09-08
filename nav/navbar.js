@@ -3,7 +3,7 @@ function navbar() {
             <div>
 
             <a id="test" href="/">
-            <img id="logo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png;maxHeight=80;maxWidth=136">
+            <img id="navlogo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png;maxHeight=80;maxWidth=136">
             </a>
             
             <div id="menu">
