@@ -1,8 +1,8 @@
-import { navbar, count_cart,takequery,show_log_menu,showmenu ,mainpage} from '../nav/navbar.js';
+import { navbar, count_cart, takequery, show_log_menu, showmenu, mainpage } from '../nav/navbar.js';
 document.querySelector( "#navbar" ).innerHTML = navbar();
- document.querySelector( "#search" ).addEventListener( "keypress", (ele) => {
-     takequery(ele)
- } );
+document.querySelector( "#search" ).addEventListener( "keypress", ( ele ) => {
+    takequery( ele )
+} );
 import footer from "../footers/footer.js"
 document.getElementById( "footer" ).innerHTML = footer()
 count_cart()
@@ -29,7 +29,7 @@ let cart_container = document.querySelector( "#cart_container" );
 let append = ( data, container ) => {
     container.innerHTML = null;
     data.forEach( ( ele, index ) => {
-        console.log(ele)
+        console.log( ele )
         let div = document.createElement( 'div' );
         let image = document.createElement( 'img' );
         image.src = ele.image;
@@ -76,7 +76,7 @@ let append = ( data, container ) => {
         disc.setAttribute( "class", "disc" );
         pri.innerText = `Was $${ ( ( ele.newprice ) * ele.quantity ).toFixed( 2 ) }`;
         pri.setAttribute( "class", "pri" );
-        disc.innerText = `Save $${ (( ele.save ) * ele.quantity ).toFixed( 2 )} `
+        disc.innerText = `Save $${ ( ( ele.save ) * ele.quantity ).toFixed( 2 ) } `
         div3.append( price, disc, pri );
         div2.append( select, p, p2 );
 
@@ -97,7 +97,7 @@ let total = ( data ) => {
     let t_savings = 0;
 
     data.forEach( ( ele ) => {
-     
+
         t_price += ( ( ele.newprice ) * ele.quantity );
         t_savings += ( ( ele.save ) * ele.quantity );
     } );
@@ -109,8 +109,8 @@ let total = ( data ) => {
     tax.innerText = `$${ t_tax }`;
     total.innerText = `$${ ( t_price - t_savings + ( +t_tax ) ).toFixed( 2 ) }`
 
-    let tot=`$${ ( t_price - t_savings + ( +t_tax ) ).toFixed( 2 ) }`
-    localStorage.setItem("cart-amount",tot)
+    let tot = `$${ ( t_price - t_savings + ( +t_tax ) ).toFixed( 2 ) }`
+    localStorage.setItem( "cart-amount", tot )
 
 }
 
@@ -124,9 +124,9 @@ if ( arr !== null && arr.length > 0 ) {
         }
         if ( ele.newprice == undefined ) {
             ele.newprice = `${ split( ele.price ) + 50 }`;
-         
+
         }
-        console.log(ele)
+        console.log( ele )
     } );
 
 
@@ -135,7 +135,7 @@ if ( arr !== null && arr.length > 0 ) {
 
 }/// if cart is empty then to continue shopping need to link index page here  at line no 178................
 else {
-    document.querySelector( "#cart_header" ).innerHTML = '<h1 class="header">Your cart is empty</h1><p style="color:black ; font-weight:normal">Just browsing?You can    <a style = "color:blue">  create an account</a> and start earning reward points whenever you make a purchase.</p>'
+    document.querySelector( "#cart_header" ).innerHTML = '<h1 class="header">Your cart is empty</h1><p style="color:black ; font-weight:normal">Just browsing?You can    <a style = "color:rgb(9, 53, 197)">  create an account</a> and start earning reward points whenever you make a purchase.</p>'
     document.querySelector( "#order" ).innerHTML = `<h1 class = "header">Order Summary</h1>
     <div id = "zero_total">
     <div>
@@ -149,8 +149,8 @@ else {
     Learn more ></a></p>
     `
         ;
-    
-    
+
+
 
 }
 
@@ -191,7 +191,7 @@ savedItems.forEach( ( ele ) => {
     if ( ele.save == undefined ) {
         ele.save = "$0";
     }
-    if ( ele.newprice ==undefined ) {
+    if ( ele.newprice == undefined ) {
         ele.newprice = `$${ split( ele.price ) + 50 }`;
 
     }
@@ -221,7 +221,7 @@ let save_append = ( data, container ) => {
         <i class="fa fa-star" style="font-size:14px;color:orange"></i>`
         let price = document.createElement( "h3" );
         let amt = document.createElement( "s" );
-        amt.innerText = `$${ ( (ele.newprice) )}`;
+        amt.innerText = `$${ ( ( ele.newprice ) ) }`;
         let button = document.createElement( "button" );
         button.innerHTML = `<i class="fa fa-shopping-cart" style="font-size:14px"></i>  Add to Cart`;
         button.addEventListener( 'click', () => {
@@ -236,14 +236,14 @@ let save_append = ( data, container ) => {
 save_append( savedItems, saved_content );
 
 let remove_saveditems = ( data, index, container ) => {
-   
+
     data.splice( index, 1 );
     save_append( data, container );
     localStorage.setItem( "saved-items", JSON.stringify( data ) )
     count_cart()
 }
 let add_to_save = ( data, index, container, ele ) => {
-    
+
     savedItems.push( ele );
     save_append( savedItems, saved_content );
     localStorage.setItem( "saved-items", JSON.stringify( savedItems ) )
@@ -276,8 +276,8 @@ let checkout = () => {
 }
 document.querySelector( "#checkout" ).addEventListener( "click", checkout );
 
-var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
+var data = JSON.parse( localStorage.getItem( "bestbuyuserdata" ) )
 
-let naME=document.getElementById("NaMe")
-naME.innerText=" Welcome "+data[0].name
+let naME = document.getElementById( "NaMe" )
+naME.innerText = " Welcome " + data[ 0 ].name
 

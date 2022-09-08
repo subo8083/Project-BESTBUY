@@ -2,7 +2,7 @@ function navbar() {
     return ` <div id="nav1">
             <div>
 
-            <a id="test" href="../Home/index.html">
+            <a id="test" href="/">
             <img id="logo" src="https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png;maxHeight=80;maxWidth=136">
             </a>
             
@@ -77,7 +77,7 @@ function navbar() {
                
           
         </div>`
-        
+
 }
 
 function showmenu() {
@@ -85,7 +85,7 @@ function showmenu() {
     console.log( '123' )
 }
 function mainpage() {
-    window.location.href ="../../BestBuy/index.html"
+    window.location.href = "../../BestBuy/index.html"
 }
 
 // it is closing the menu tab if we click on 1st bar of navbar
@@ -100,7 +100,7 @@ let show_log_menu = () => {
     document.querySelector( "#login_sign" ).style.visibility = "visible";
 }
 function closehelp() {
-    console.log(13)
+    console.log( 13 )
     document.querySelector( "#options" ).style.visibility = "hidden";
     document.querySelector( "#login_sign" ).style.visibility = "hidden";
     document.querySelector( "#q_append" ).style.visibility = "hidden";
@@ -109,7 +109,7 @@ function closehelp() {
 //     takequery(ele)
 // } );
 
-let araaY=[]
+let araaY = []
 
 function takequery( ele ) {
     if ( ele.key == "Enter" ) {
@@ -117,24 +117,24 @@ function takequery( ele ) {
         let url = 'https://suranjanachary.github.io/db/db.json';
         let container = document.querySelector( "#q_append" );
         container.style.visibility = "visible";
-    fetch( url ).then( ( res ) => {
-        return res.json();
-    } ).then( ( res ) => {
-        let data = res.products;
-        query_append( data [query]);
-        araaY.push(query)
-    } ).catch( ( err ) => {
-        console.log( err );
-        document.querySelector( "#q_append" ).innerHTML = `<p style = "text-align:center ; margin-top:5%; color:gray" : center>Product not found !!</p>`;
-        
-    })
-        
-    }    
+        fetch( url ).then( ( res ) => {
+            return res.json();
+        } ).then( ( res ) => {
+            let data = res.products;
+            query_append( data[ query ] );
+            araaY.push( query )
+        } ).catch( ( err ) => {
+            console.log( err );
+            document.querySelector( "#q_append" ).innerHTML = `<p style = "text-align:center ; margin-top:5%; color:gray" : center>Product not found !!</p>`;
+
+        } )
+
+    }
 };
 
 let query_append = ( data ) => {
     let container = document.querySelector( "#q_append" );
-    
+
     container.innerHTML = null;
     data.forEach( ( ele ) => {
         let div = document.createElement( 'div' );
@@ -146,24 +146,24 @@ let query_append = ( data ) => {
         if ( ele.save == undefined ) {
             save.innerText = "View";
         } else {
-            save.innerText = `Save ${ ele.save }`; 
+            save.innerText = `Save ${ ele.save }`;
         }
-        
-        div.addEventListener("click",function(){
+
+        div.addEventListener( "click", function () {
 
             showing()
-        })
+        } )
         div.append( image, h3, save );
         container.append( div );
     } );
-    
-    console.log(data)
+
+    console.log( data )
 }
 
 
 
 let count_cart = () => {
-// <<<<<<< HEAD
+    // <<<<<<< HEAD
     let cart_count = JSON.parse( localStorage.getItem( 'cart-items' ) ) || [];
     if ( cart_count.length > 0 ) {
         document.querySelector( "#cart_count" ).style.visibility = 'visible';
@@ -173,46 +173,23 @@ let count_cart = () => {
         document.querySelector( "#cart_count" ).style.visibility = "hidden";
     }
 
-// =======
-//     let cart_count = JSON.parse( localStorage.getItem( 'cart-items' ) );
-//     if ( cart_count.length > 0 ) {
-//         document.querySelector( "#cart_count" ).style.visibility = 'visible';
-//         document.querySelector( "#cart_count" ).innerText = cart_count.length;
-//     } else {
-//         document.querySelector( "#cart_count" ).style.visibility = "hidden";
-//     }
-// >>>>>>> 31eaddb4129defa6f5ca59dc29d87cd9960251b8
+
 }
 
-// console.log( count_cart());
 
-// document.querySelector("#logINN").addEventListener("click",myLOG);
-
-// function myLOG()
-// {
-//     window.location.href="../SIGNUP login/login.html"
-// }
-// var data = JSON.parse(localStorage.getItem("bestbuyuserdata"))
-
-// let naME=document.getElementById("NaMe")
-// naME.innerText=" Welcome "+data[0].name
-
-function showing(){
+function showing() {
     let query = document.querySelector( "#search" ).value;
-    if(query=="laptops")
-    {
-         window.location.href="../itemsPages/itemsPage-laptop.html"
+    if ( query == "laptops" ) {
+        window.location.href = "../itemsPages/itemsPage-laptop.html"
     }
-    if(query=="kitchen")
-    {
-        window.location.href="../itemsPages/itemsPage-kitchen.html"
+    if ( query == "kitchen" ) {
+        window.location.href = "../itemsPages/itemsPage-kitchen.html"
     }
-    if(query=="headphones")
-    {
-        window.location.href="../itemsPages/itemsPage-headPhones.html"
+    if ( query == "headphones" ) {
+        window.location.href = "../itemsPages/itemsPage-headPhones.html"
     }
 
-    
+
 }
 
-export { navbar, count_cart, takequery, show_log_menu,showmenu,mainpage}
+export { navbar, count_cart, takequery, show_log_menu, showmenu, mainpage }

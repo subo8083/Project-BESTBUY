@@ -1,5 +1,5 @@
-function footer(){
-    return`
+function footer() {
+    return `
     <div id="sectionTop">
             <div id="support">
                 <h3>Customer Support</h3>
@@ -29,12 +29,12 @@ function footer(){
                 <input type="email" id="email" placeholder="Enter Email Address">
                 <button id="submit">Submit</button>
                 <div id="socialHandle">
-                    <div><a href="https://www.facebook.com/BestBuyCanada"><img src="https://cdn-icons-png.flaticon.com/128/174/174848.png" alt="facebookHandle"></a></div>
-                    <div><a href="https://www.instagram.com/bestbuycanada"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="InstagramHandle"></a></div>
-                    <div><a href="https://www.linkedin.com/company/best-buy"><img src="https://cdn-icons.flaticon.com/png/128/3536/premium/3536505.png?token=exp=1658337504~hmac=49cd99413e6e3215627230629af76100" alt="linkedinHandle"></a></div>
-                    <div><a href="https://www.pinterest.com/bestbuycanada/"><img src="https://cdn-icons.flaticon.com/png/128/3536/premium/3536559.png?token=exp=1658337530~hmac=af349e3ac050adfd300039a00d0a756e" alt="pinterestHandle"></a></div>
-                    <div><a href="https://www.twitter.com/bestbuycanada"><img src="https://cdn-icons.flaticon.com/png/128/3256/premium/3256013.png?token=exp=1658337548~hmac=59d821718741b21e0250943706abe41b" alt="twitterHandle"></a></div>
-                    <div><a href="https://www.youtube.com/user/CanadaBestBuy"><img src="https://cdn-icons.flaticon.com/png/128/3938/premium/3938026.png?token=exp=1658337568~hmac=b6f9a742cd9d143246bd04b6459f23c1" alt="youtubeHandle"></a></div>
+                    <div><a href="https://www.facebook.com/BestBuyCanada"> <i class="fa fa-facebook" style="font-size:20px ;  background-color:transparent"></i></a></div>
+                    <div><a href="https://www.instagram.com/bestbuycanada"> <i class="fa fa-instagram" style="font-size:20px ;background-color:transparent"></i></a></div>
+                    <div><a href="https://www.linkedin.com/company/best-buy"> <i class="fa fa-linkdin" style="font-size:20px ;background-color:transparent"></i></a></div>
+                    <div><a href="https://www.pinterest.com/bestbuycanada/"> <i class="fa fa-pinterest" style="font-size:20px ;background-color:transparent"></i></a></div>
+                    <div><a href="https://www.twitter.com/bestbuycanada"> <i class="fa fa-twitter" style="font-size:20px ; background-color:transparent"></i></a></div>
+                    <div><a href="https://www.youtube.com/user/CanadaBestBuy"> <i class="fa fa-youtube" style="font-size:20px ;  background-color:transparent"></i></a></div>
                 </div>
             </div>
             
