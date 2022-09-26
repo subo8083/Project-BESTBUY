@@ -1,7 +1,7 @@
 # PROJECT--BESTBUY
 #### e-commerce website for electronic Products
 
-### Live : https://normal-ducks-2238-urvashisohaliya2511.vercel.app/
+### Live : https://normal-ducks-2238-8jyi194dv-subo8083.vercel.app/
 
 # Features 
 - Dynamic Navbar with Search functionalities.
