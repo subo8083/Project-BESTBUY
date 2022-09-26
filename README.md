@@ -11,7 +11,7 @@
 - Payment page
 
 
-## lets have some look on the website pages that have been built:
+## lets have a look on the website pages that have been built:
 
   # 1) Landing page:
   
