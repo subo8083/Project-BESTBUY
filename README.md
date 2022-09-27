@@ -23,7 +23,7 @@ The page contains dynamic navbar functionality which is then exported to each se
 signup or login to the website for purchasing any product.
 It contains different products whicch will be purchased on single click.
 
-# 1) Account Section:
+# 2) Account Section:
 
     
  ![Screenshot (188)](https://user-images.githubusercontent.com/103572638/192346707-8f9e6581-cd49-41db-8c23-d9f123e0063f.png)
